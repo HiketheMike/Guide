@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7561,9 +7562,9 @@ a.anchor-link {
 </ul>
 <img alt="No description has been provided for this image" src="../Pictures/Default_Installation.png" style="width:350; height:275; display:block; margin:10px auto"/>
 <ul>
-<li>There are also a few other versions that you can choose to download.</li>
+<li>There are also a few other versions that you can choose to download.
+<img alt="No description has been provided for this image" src="../Pictures/Optional_Installation.png" style="width:350; height:275; display:block; margin:10px auto"/></li>
 </ul>
-<img alt="No description has been provided for this image" src="../Pictures/Optional_Installation.png" style="width:350; height:275; display:block; margin:10px auto"/>
 <blockquote>
 <h3 id="Please-refer-to-the-guide-below-to-find-the-suitable-version-for-your-device.">Please refer to the guide <strong>below</strong> to find the suitable version for your device.<a class="anchor-link" href="#Please-refer-to-the-guide-below-to-find-the-suitable-version-for-your-device.">¶</a></h3></blockquote>
 </div>
@@ -7599,9 +7600,9 @@ a.anchor-link {
 <div style="border:2px solid black; padding:10px">
 <h2 id="-Step-3:-Finishing-Installation"><strong> Step 3: Finishing Installation</strong><a class="anchor-link" href="#-Step-3:-Finishing-Installation">¶</a></h2><ul>
 <li>For both Mac and Windows, the <strong>default options</strong> are sufficient and should not be changed, just click continue and proceed with the installation (in case you are unsure about what to choose or that you clicked something wrong, you can check for these options in the videos below and follow them)</li>
-<li>Open up <strong>Anaconda Navigator</strong>.</li>
-</ul>
-</div>
+<li>Open up <strong>Anaconda Navigator</strong>.</li></ul></div>
+
+
 </div>
 </div>
 </div>
@@ -7639,7 +7640,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># FOR WINDOWS</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s2">"yFeVEAeOcnE"</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7667,7 +7668,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># FOR MACOS</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">'DNu8pQOYRGg'</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7695,7 +7696,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For LINUX</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">'sU2mXjOB-fA'</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7722,8 +7723,8 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1><span style="color:orange"> Github Desktop</span></h1>
-<img alt="No description has been provided for this image" src="../Pictures/Github_desktop.png" style="width:500px; height: 250px; margin:10px auto; display:block ">
-</img></div>
+<p><img alt="No description has been provided for this image" src="../Pictures/Github_desktop.png" style="width:500px; height: 250px; margin:10px auto; display:block "/></p>
+</div>
 </div>
 </div>
 </div>
@@ -7746,12 +7747,12 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div style="border: 2px solid black; padding:10px">
 <h2 id="Step-1:-Download-GitHub-Desktop"><strong>Step 1: Download GitHub Desktop</strong><a class="anchor-link" href="#Step-1:-Download-GitHub-Desktop">¶</a></h2><ul>
-<li>Go to <a href="https://desktop.github.com/download/">Github Desktop</a><img alt="No description has been provided for this image" src="../Pictures/Github_download.png" style="width:850px; display:block; height:400px; margin:10px auto"/>
-</li>
+<li>Go to <a href="https://desktop.github.com/download/">Github Desktop</a>
+<img alt="No description has been provided for this image" src="../Pictures/Github_download.png" style="width:850px; display:block; height:400px; margin:10px auto"/></li>
 </ul>
 </div>
 <div class="alert alert-info" style="border:2px solid black">
-<h3 id="%F0%9F%AA%9F%F0%9F%8D%8E-Windows-Guide-and-MacOS-Guide*">🪟🍎 <em>Windows Guide and MacOS Guide</em>*<a class="anchor-link" href="#%F0%9F%AA%9F%F0%9F%8D%8E-Windows-Guide-and-MacOS-Guide*">¶</a></h3><ul>
+<h3 id="%F0%9F%AA%9F%F0%9F%8D%8E-*Windows-Guide-and-MacOS-Guide**">🪟🍎 *Windows Guide and MacOS Guide**<a class="anchor-link" href="#%F0%9F%AA%9F%F0%9F%8D%8E-*Windows-Guide-and-MacOS-Guide**">¶</a></h3><ul>
 <li>For Windows, it is simple; we only need to click on either the <strong>Default installation</strong> or the <strong>64-Bit Graphical Installer (912.3M)</strong> to download.</li>
 <li>Downloading GitHub is more Straightforward, for your corresponding system, click on either <strong>Download for Windows (64-bit)</strong> or <strong>download for macOS</strong>.</li>
 <li>Once it is downloaded, run the installer.</li>
@@ -7759,8 +7760,8 @@ a.anchor-link {
 <h3 id="%F0%9F%90%A7-Linux-Guide">🐧 <em>Linux Guide</em><a class="anchor-link" href="#%F0%9F%90%A7-Linux-Guide">¶</a></h3><p>Sadly it doesn't officially support <strong>Linux</strong> devices (Linux users will be taught to use Git directly instead).</p>
 <blockquote>
 <p>=&gt; Once it is downloaded, run the installer.</p>
-</blockquote>
-</div>
+</blockquote></div>
+
 </div>
 </div>
 </div>
@@ -7774,9 +7775,9 @@ a.anchor-link {
 <div style="border:2px solid black; padding:10px">
 <h2 id="Step-2:-Install-GitHub-Desktop"><strong>Step 2: Install GitHub Desktop</strong><a class="anchor-link" href="#Step-2:-Install-GitHub-Desktop">¶</a></h2><ul>
 <li>After downloading, click on the file and wait for it to <strong>Install</strong></li>
-<li>After opening GitHub, it would ask you to link with your <strong>GitHub account</strong> as well as <strong>Configure Git</strong>, <strong>skip this step</strong> for now as it doesn't affect the process.</li>
-</ul>
-</div>
+<li>After opening GitHub, it would ask you to link with your <strong>GitHub account</strong> as well as <strong>Configure Git</strong>, <strong>skip this step</strong> for now as it doesn't affect the process.</li></ul></div>
+
+
 </div>
 </div>
 </div>
@@ -7857,9 +7858,9 @@ Using the <strong>wrong path</strong> will cause Jupyter Notebook/Lab to <strong
 </ul>
 <img alt="drawing" src="../Pictures/Cloning_3.png" style="width:350px; height:275px; display:block; margin:10px auto"/>
 <ul>
-<li>Here's the link shown on the picture: <a href="https://github.com/HiketheMike/Codes.git">https://github.com/HiketheMike/Codes.git</a></li>
-</ul>
-</div>
+<li>Here's the link shown on the picture: <a href="https://github.com/HiketheMike/Codes.git">https://github.com/HiketheMike/Codes.git</a></li></ul></div>
+
+
 </div>
 </div>
 </div>
@@ -7874,7 +7875,7 @@ Using the <strong>wrong path</strong> will cause Jupyter Notebook/Lab to <strong
 <h2 id="Step-2:-Define-the-Local-Path"><strong>Step 2: Define the Local Path</strong><a class="anchor-link" href="#Step-2:-Define-the-Local-Path">¶</a></h2><ul>
 <li>On YOUR <strong>Jupyter Notebook/lab</strong> write this function:</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span> 
 
 <span class="c1"># Example Output (Your own output should look like this)</span>
@@ -7972,8 +7973,8 @@ Using the <strong>wrong path</strong> will cause Jupyter Notebook/Lab to <strong
 </ul>
 <blockquote>
 <p>=&gt; Once it is downloaded, run the installer.</p>
-</blockquote>
-</div>
+</blockquote></div>
+
 </div>
 </div>
 </div>
@@ -7987,10 +7988,10 @@ Using the <strong>wrong path</strong> will cause Jupyter Notebook/Lab to <strong
 <div style="border:2px solid black; padding:10px">
 <h2 id="Step-2:-Installation"><strong>Step 2: Installation</strong><a class="anchor-link" href="#Step-2:-Installation">¶</a></h2><ul>
 <li>For both Mac and Windows, the <strong>default options</strong> are sufficient and should not be changed, just click continue and proceed with the installation</li>
-<li>Open up <strong>Anaconda Navigator</strong> and <strong>Visual Studio Code</strong> should appear as one of the installed apps across all Environments.</li>
-</ul>
-<img alt="No description has been provided for this image" src="../Pictures/Anaconda_VSC.png" style="width:850px; display:block; height:400px; margin:10px auto"/>
-</div>
+<li>Open up <strong>Anaconda Navigator</strong> and <strong>Visual Studio Code</strong> should appear as one of the installed apps across all Environments.
+<img alt="No description has been provided for this image" src="../Pictures/Anaconda_VSC.png" style="width:850px; display:block; height:400px; margin:10px auto"/></li></ul></div>
+
+
 </div>
 </div>
 </div>

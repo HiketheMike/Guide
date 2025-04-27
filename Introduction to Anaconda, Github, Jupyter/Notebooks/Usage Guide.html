@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7583,26 +7584,28 @@ a.anchor-link {
 </ul>
 </li>
 <li><strong>Clone/Remove environments</strong> using the buttons below the list</li>
-<li><strong>Export/Import</strong> environments using the import button (optional)</li>
-</ol>
-</div>
+<li><strong>Export/Import</strong> environments using the import button (optional)</li></ol></div>
 <a name="packages"></a>
-## <span style="color:red"> 3. Installing Packages </span>
-- While most of the packages are already available in the **base (root)** environment, we may need to download some other packages, here's a guide on how to do it:
+
+
+<h2 id="-3.-Installing-Packages-"><span style="color:red"> 3. Installing Packages </span><a class="anchor-link" href="#-3.-Installing-Packages-">¶</a></h2><ul>
+<li>While most of the packages are already available in the <strong>base (root)</strong> environment, we may need to download some other packages, here's a guide on how to do it:</li>
+</ul>
 <div style="border:2px solid black; padding:10px">
 <h2 id="Guide"><strong>Guide</strong><a class="anchor-link" href="#Guide">¶</a></h2><ol>
 <li>For <strong>Windows</strong> open <code>Anaconda Prompt</code>:</li>
 </ol>
 <img alt="No description has been provided for this image" src="../Pictures/Anaconda_prompt.png" style="width:400px; display:block; height:100px; margin:10px auto"/>
 <ol>
-<li>For <strong>macOS/Linux</strong> open <code>Terminal</code>:</li>
-</ol>
-<img alt="No description has been provided for this image" src="../Pictures/Terminal.png" style="width:500px; display:block; height:100px; margin:10px auto"/>
-<ol start="2">
-<li>Use the Command <code>pip install &lt;package&gt;</code> (for example: <code>pip install numpy</code>)</li>
-<li><strong>ONLY</strong> The environment that is being shown on the left, in this case, for both pictures <strong>base</strong> environment, will receive the <code>&lt;package&gt;</code>.</li>
-</ol>
-</div>
+<li><p>For <strong>macOS/Linux</strong> open <code>Terminal</code>:
+<img alt="No description has been provided for this image" src="../Pictures/Terminal.png" style="width:500px; display:block; height:100px; margin:10px auto"/></p>
+</li>
+<li><p>Use the Command <code>pip install &lt;package&gt;</code> (for example: <code>pip install numpy</code>)</p>
+</li>
+<li><p><strong>ONLY</strong> The environment that is being shown on the left, in this case, for both pictures <strong>base</strong> environment, will receive the <code>&lt;package&gt;</code>.</p>
+</li></ol></div>
+
+
 </div>
 </div>
 </div>
@@ -7621,10 +7624,10 @@ a.anchor-link {
 </li>
 <li><p><strong>Visual Studio Code</strong> can also be used to follow this guide, as long as it uses the <strong>Jupyter</strong> extension.</p>
 </li>
-<li><p>Jupyter allows for 3 types of cells, <code>Markdown, Code, and Raw</code>. We can change the functionality of a cell by choosing in the drop-down box on the top bar.</p>
+<li><p>Jupyter allows for 3 types of cells, <code>Markdown, Code, and Raw</code>. We can change the functionality of a cell by choosing in the drop-down box on the top bar.
+<img alt="No description has been provided for this image" src="../Pictures/Cell_types.png" style="width:1500px; display:block; height:300px; margin:10px auto"/>&gt;</p>
 </li>
 </ul>
-<p><img alt="No description has been provided for this image" src="../Pictures/Cell_types.png" style="width:1500px; display:block; height:300px; margin:10px auto"/>&gt;</p>
 </div>
 </div>
 </div>
@@ -7737,12 +7740,12 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 
 <span class="c1"># Read in the Apple data</span>
 <span class="n">stocks</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">([</span><span class="s1">'AAPL'</span><span class="p">,</span> <span class="s1">'MSFT'</span><span class="p">,</span> <span class="s1">'NFLX'</span><span class="p">],</span> <span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
