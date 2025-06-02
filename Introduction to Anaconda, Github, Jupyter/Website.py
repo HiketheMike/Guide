@@ -161,40 +161,26 @@ if selected_guide == "Anaconda Navigator":
         st.write("(Works in Jupyter Lab or VS Code **code** cells, as shown below)")
 
 elif selected_guide == "Jupyter Lab":
-    # --- JUPYTER LAB GUIDE CONTENT ---
-    st.markdown("<h1 style='color:orange;'>Jupyter Lab Guide</h1>", unsafe_allow_html=True)
-    
-    # Load Jupyter logo if available
-    try:
-        st.image(get_image_path("Jupyter_logo.png"), caption="Jupyter Logo", width=500)
-    except FileNotFoundError:
-        st.warning("Jupyter logo image not found.")
+    st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
     
     st.write("- With the **base(root)** environment chosen navigate to the **Home** section in Anaconda Navigator.")
-    st.write("- Open up **Jupyter Lab**, it should have been automatically installed already. If it's not, you're choosing the wrong environment.")
+    st.write("- Open up **Jupyter Lab**, it should have been automatically installed already, if its not then you're choosing the **wrong environment**.")
     
-    # --- Main Overview ---
     st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
-    
-    st.write("When opening up Jupyter Lab, Select **Python 3(ipykernel)** in the **Notebook** section, this should make a new Jupyter Notebook file.")
+    st.write("When opening up Jupyter Lab, Select **Python 3(ipykernel)** in the **Notebook** section, this should give make a new Jupyter Notebook file.")
     st.write("Jupyter supports 3 cell types for mixed code and documentation:")
-    st.markdown("""
-    1. **Code Cells** - For executable code  
-    2. **Markdown Cells** - For formatted text/explanations  
-    3. **Raw Cells** - Unformatted plain text (rarely used)
-    """)
+    st.write("1. **Code Cells** - For executable code")
+    st.write("2. **Markdown Cells** - For formatted text/explanations")
+    st.write("3. **Raw Cells** - Unformatted plain text (rarely used)")
     st.write("- Switch between types using the dropdown in the toolbar, it will change the current cell type.")
-    
+
     try:
-        st.image(get_image_path("Cell_types.png"), 
-                caption="Jupyter Lab Cell Types", width=700)
+        st.image(get_image_path("Cell_types.png"), width=1000)
     except FileNotFoundError:
-        st.warning("Cell types image not found.")
-    
-    st.markdown("### Useful Shortcuts")
+        st.warning("Cell_types.png not found")
+
+    st.write("Some useful shortcuts for cell actions in **Command mode**, you can quit **Edit Mode** by pressing **Esc**:")
     st.markdown("""
-    Some useful shortcuts for cell actions in **Command mode** (you can quit **Edit Mode** by pressing **Esc**):
-    
     | Action                        | Shortcut                     |
     | ----------------------------- | ---------------------------- |
     | Run cell (stay in cell)       | `Ctrl/Cmd + Enter`           |
@@ -209,72 +195,55 @@ elif selected_guide == "Jupyter Lab":
     | Change to Code cell           | `Y`                          |
     | Saving the file               | `Ctrl/Cmd + S`               |
     """)
-    
-    # --- Cell Types Section ---
+
     st.markdown("<h3 style='color:blue;'>Markdown/Raw Cells</h3>", unsafe_allow_html=True)
-    with st.container(border=True):
-        st.markdown("""
-        **Markdown Cells**
-        - Function like **Microsoft Word** - supports text formatting, images, and videos
-        - **Not** interpreted as code (unlike code cells)
-        - Supports various formatting options:
-        """)
-        
-        st.markdown("<span style='color:red'>Colored text</span>", unsafe_allow_html=True)
-        st.markdown("<div style='border:2px solid black; padding:10px'>Bordered box</div>", unsafe_allow_html=True)
-        st.info("Info alert box")
-        
-        st.markdown("""
-        **Raw Cells**
-        - Plain text **without any formatting**
-        - Rarely used due to limited functionality
-        
-        > Markdown streamlines documentation by combining formatted text with executable code.
-        """)
+    st.write("*Markdown Cells*")
+    st.write("- Function like **Microsoft Word** - supports text formatting, images, and videos")
+    st.write("- **Not** interpreted as code (unlike code cells)")
+    st.write("- It also enables some formatting (you can copy these these formats and try it yourself):")
     
-    st.markdown("<h3 style='color:blue;'>Code Cells</h3>", unsafe_allow_html=True)
-    with st.container(border=True):
-        st.code("""# In code cells, we can put a "#" to denote a "comment"
+    st.markdown("<span style='color:red'>Colored text</span>", unsafe_allow_html=True)
+    st.markdown("<div style='border:2px solid black; padding:10px'>Bordered box</div>", unsafe_allow_html=True)
+    st.markdown("<div class='alert alert-info'>Info alert box</div>", unsafe_allow_html=True)
+    
+    st.write("*Raw Cells*")
+    st.write("- Plain text **without any formatting**")
+    st.write("- Rarely used due to limited functionality")
+    st.write("> Markdown streamlines documentation by combining formatted text with executable code.")
+
+    st.markdown("<h3 style='color:blue;'>Code cells</h3>", unsafe_allow_html=True)
+    st.code("""# In code cells, we can put a "#" to denote a "comment"
 # Any text written here is considered plain text, this helps to explain a chunk of code
 
 # Here's a simple math function
 a = 5 + 1
 print(f'Result: {a}')
-
 # You can also download packages using code cells
 %pip install yfinance
 """, language="python")
-    
-    # --- Creating and Exporting Notebook ---
-    st.markdown("<h2 style='color:red;'>Creating and Exporting a Notebook</h2>", unsafe_allow_html=True)
-    
+
+    st.markdown("<h2 style='color:red;'>Creating and exporting a Notebook on Lab</h2>", unsafe_allow_html=True)
     st.write("- To start with a new Notebook, Go to **File** and choose **New** then **Notebook**. Now you would be able to write your own work into this file.")
     
     try:
-        st.image(get_image_path("Jupyter_new_file.png"), 
-                caption="Creating a new Notebook in Jupyter Lab", width=400)
+        st.image(get_image_path("Jupyter_new_file.png"), width=350)
     except FileNotFoundError:
-        st.warning("Jupyter new file image not found.")
-    
+        st.warning("Jupyter_new_file.png not found")
+
     st.write("- Below in the picture, you can also see the option **Save and Export Notebook As** — click on it and choose **HTML**.")
-    
-    # --- Accessing Folders ---
+
     st.markdown("<h2 style='color:red;'>Accessing Folders</h2>", unsafe_allow_html=True)
-    
     st.write("- Click the **Folders** icon (left sidebar) to view files")
     st.write("- Jupyter only accesses files within its **current working directory**")
-    st.write("- If your file isn't in this directory, you cannot access it through Jupyter Lab.")
+    st.write("- If you're file isn't in this directory, you cannot access it through Jupyter Lab.")
     st.write("> See guide below to check your current directory")
-    
+
     try:
-        st.image(get_image_path("Jupyter_folder.png"), 
-                caption="Jupyter Lab Folder View", width=400)
+        st.image(get_image_path("Jupyter_folder.png"), width=350)
     except FileNotFoundError:
-        st.warning("Jupyter folder image not found.")
-    
-    # --- Checking Current Directory ---
-    st.markdown("<h2 style='color:red;'>Checking the Current Working Directory</h2>", unsafe_allow_html=True)
-    
+        st.warning("Jupyter_folder.png not found")
+
+    st.markdown("<h2 style='color:red;'>Checking the current working directory</h2>", unsafe_allow_html=True)
     st.write("On YOUR **Jupyter lab** Code cell write this function:")
     st.code("""import os
 os.getcwd() 
@@ -282,11 +251,8 @@ os.getcwd()
 # Example Output (Your output should look like this)
 'C:\\Users\\LENOVO\\'
 """, language="python")
-    
-    st.write("- It will Output the **Directory** that Jupyter is connecting to. **Copy that Directory Path** as it will be used later for Github Desktop.")
-    
-    st.success("""
-    **Note**:
-    - You can now access any `.ipynb` files
-    - The next part of the guide shows how to download lectures from an online repository
-    """)
+
+    st.write("- It will Output the **Directory** that Jupyter is connecting to,  **copy that Directory Path** as it will be used later for Github Desktop.")
+    st.write("**Note**:")
+    st.write("- You can now access any `.ipynb` files,")
+    st.write("- The next part of the guide shows how to download lectures from an online repository.")
