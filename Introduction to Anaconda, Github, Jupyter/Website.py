@@ -98,7 +98,7 @@ st.markdown("<h2 style='color:red;'>Getting used to Anaconda</h2>", unsafe_allow
 st.markdown("### <span style='color:blue;'> 1. Main Interface Overview</span>", unsafe_allow_html=True)
 with st.container(border=True):
     try:
-        st.image(get_image_path("anaconda_navigator.png"), 
+        st.image(get_image_path("Anaconda_Navigator.png"), 
                 caption="Anaconda Navigator Main Interface", width=700)
     except FileNotFoundError:
         st.warning("Anaconda navigator interface image not found.")
@@ -115,7 +115,7 @@ with st.container(border=True):
 st.markdown("### <span style='color:blue;'> 2. Managing Environments</span>", unsafe_allow_html=True)
 with st.container(border=True):
     try:
-        st.image(get_image_path("anaconda_environments.png"), 
+        st.image(get_image_path("Anaconda_environments.png"), 
                 caption="Anaconda Environments Management", width=700)
     except FileNotFoundError:
         st.warning("Anaconda environments image not found.")
