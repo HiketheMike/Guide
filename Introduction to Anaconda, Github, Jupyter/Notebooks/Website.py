@@ -1,22 +1,11 @@
 import streamlit as st
-from PIL import Image
-import io
-import requests
-import os 
 
-# Set page config
 st.set_page_config(layout="wide")
 
 # --- Title and Introduction ---
 st.markdown("<h1 style='color:orange;'>Anaconda Navigator</h1>", unsafe_allow_html=True)
-
-# Load Anaconda logo using PIL (you can replace this with your actual image loading method)
-try:
-    anaconda_logo = os.path.abspath("C:/Users/LENOVO/Introduction to Anaconda, Github, Jupyter/Pictures/Anaconda logo.jpg") # Replace with your actual image path
-    st.image(anaconda_logo, caption="Anaconda Logo", width=500)
-except FileNotFoundError:
-    st.warning("Anaconda logo image not found. Please ensure the image file exists.")
-    
+# Corrected image path: "../Pictures/Anaconda logo.jpg"
+st.image("../Pictures/Anaconda logo.jpg", caption="Anaconda Logo", width=500)
 st.write("- To have access to Data science tools in just 1 download (contains Python, and some other applications)")
 
 # --- Anaconda Navigator Installation ---
@@ -33,13 +22,8 @@ with st.container(border=True):
     st.markdown("## **Step 2: Choose a suitable version for your Device**")
     st.write("- Go to **Distribution Installers** not **Miniconda Installers** and choose a suitable version.")
     st.write("- Check the guide below to find your suitable version.")
-    
-    # Load Anaconda versions image
-    try:
-        anaconda_versions = Image.open("anaconda_versions.png")
-        st.image(anaconda_versions, caption="Anaconda Versions Guide", width=700)
-    except FileNotFoundError:
-        st.warning("Anaconda versions image not found.")
+    # Corrected image path: "../Pictures/Anaconda_versions.png"
+    st.image("../Pictures/Anaconda_versions.png", caption="Anaconda Versions Guide", width=700) # Adjusted width for better display
 
     st.markdown("### 🪟 *Windows Guide*")
     st.write("- For Windows, we only need to click on either the **Default installation** or the **64-Bit Graphical Installer (912.3M)** to download.")
@@ -85,6 +69,7 @@ st.video("https://www.youtube.com/watch?v=DNu8pQOYRGg")
 st.write("### For LINUX")
 st.video("https://www.youtube.com/watch?v=sU2mXjOB-fA")
 
+
 st.success("✅ **Anaconda Navigator** is now Ready to be used. You now have access to all the essential tools for the course. There are also video guide below from the Official Anaconda Website.")
 
 # --- Getting Used to Anaconda ---
@@ -93,11 +78,8 @@ st.markdown("<h2 style='color:red;'>Getting used to Anaconda</h2>", unsafe_allow
 
 st.markdown("### <span style='color:blue;'> 1. Main Interface Overview</span>", unsafe_allow_html=True)
 with st.container(border=True):
-    try:
-        navigator_interface = Image.open("anaconda_navigator.png")
-        st.image(navigator_interface, caption="Anaconda Navigator Main Interface", width=700)
-    except FileNotFoundError:
-        st.warning("Anaconda navigator interface image not found.")
+    # Corrected image path: "../Pictures/Anaconda_navigator.png"
+    st.image("../Pictures/Anaconda_navigator.png", caption="Anaconda Navigator Main Interface", width=700)
 
     st.markdown("""
     | Component   | Description                     |
@@ -110,11 +92,8 @@ with st.container(border=True):
 
 st.markdown("### <span style='color:blue;'> 2. Managing Environments</span>", unsafe_allow_html=True)
 with st.container(border=True):
-    try:
-        environments_img = Image.open("anaconda_environments.png")
-        st.image(environments_img, caption="Anaconda Environments Management", width=700)
-    except FileNotFoundError:
-        st.warning("Anaconda environments image not found.")
+    # Corrected image path: "../Pictures/Anaconda_environments.png"
+    st.image("../Pictures/Anaconda_environments.png", caption="Anaconda Environments Management", width=700)
 
     st.markdown("""
     *Default Environment (`base`)*
@@ -123,13 +102,13 @@ with st.container(border=True):
     """)
     st.markdown("""
     *Why Use Separate Environments?*
-    - **Isolation**: Environments act like independent "baskets" for packages—errors in one won't affect others.
+    - **Isolation**: Environments act like independent "baskets" for packages—errors in one won’t affect others.
     - **Safety**: If an environment breaks, delete it and create a new one without reinstalling everything.
     """)
     st.markdown("""
     *Switching Environments*
     1. Select your desired environment (e.g., `apex`) from the dropdown.
-    2. Launch apps (Jupyter, Spyder, etc.)—they'll now use the selected environment.
+    2. Launch apps (Jupyter, Spyder, etc.)—they’ll now use the selected environment.
     """)
     st.markdown("""
     *Environments customization*
