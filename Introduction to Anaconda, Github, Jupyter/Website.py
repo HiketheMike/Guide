@@ -16,9 +16,10 @@ def get_image_path(image_name):
 st.sidebar.title("Navigation")
 selected_guide = st.sidebar.selectbox(
     "Select Guide",
-    ["Anaconda Navigator", "Jupyter Lab"],
+    ["Anaconda Navigator", "Jupyter Lab", "GitHub Desktop", "Visual Studio Code"],
     index=0  # Default to Anaconda Navigator
 )
+
 
 if selected_guide == "Anaconda Navigator":
     # --- ANACONDA NAVIGATOR GUIDE CONTENT ---
@@ -256,3 +257,230 @@ os.getcwd()
     st.write("**Note**:")
     st.write("- You can now access any `.ipynb` files,")
     st.write("- The next part of the guide shows how to download lectures from an online repository.")
+
+elif selected_guide == "GitHub Desktop":
+    # --- GITHUB DESKTOP GUIDE CONTENT ---
+    st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
+    
+    try:
+        st.image(get_image_path("Github_desktop.png"), width=500)
+    except FileNotFoundError:
+        st.warning("Github_desktop.png not found")
+    
+    # --- Installation ---
+    st.markdown("<h2 style='color:red;'>GitHub Desktop Installation</h2>", unsafe_allow_html=True)
+    
+    with st.container(border=True):
+        st.markdown("## **Step 1: Download GitHub Desktop**")
+        st.write("- Go to [Github Desktop](https://desktop.github.com/download/)")
+        
+        try:
+            st.image(get_image_path("Github_download.png"), width=850)
+        except FileNotFoundError:
+            st.warning("Github_download.png not found")
+        
+        st.markdown("### 🪟🍎 *Windows Guide and MacOS Guide*")
+        st.write("- For Windows, we only need to click on either the **Default installation** or the **64-Bit Graphical Installer (912.3M)** to download.")
+        st.write("- Downloading GitHub is more straightforward, for your corresponding system, click on either **Download for Windows (64-bit)** or **download for macOS**.")
+        st.write("- Once it is downloaded, run the installer.")
+        st.write("> => Once it is downloaded, run the installer.")
+    
+    with st.container(border=True):
+        st.markdown("### 🐧 *Linux Guide*")
+        st.write("- For linux users, go to this website https://github.com/shiftkey/desktop, it will take you to a github repository.")
+        st.write("- Choose the correct version of your Linux system and download it.")
+        st.write("- Navigate to where you downloaded the file and right click, choose **Open Terminal in here**.")
+        st.write("- Use the command `sudo apt install ./<file>` or `sudo dpkg -i <file>`.")
+    
+    st.video("https://www.youtube.com/watch?v=Foqs70mT2yc")
+    
+    with st.container(border=True):
+        st.markdown("## **Step 2: Install GitHub Desktop**")
+        st.write("- Wait for it to **Install**")
+        st.write("- After opening GitHub, it would ask you to link with your **GitHub account** as well as **Configure Git**, **skip this step** and press **finish**, you can login later.")
+    
+    # --- Cloning Repository ---
+    st.markdown("<h2 style='color:red;'>Cloning a github repository downloading data from github</h2>", unsafe_allow_html=True)
+    
+    with st.container(border=True):
+        st.markdown("## **Step 1: Obtain the URL**")
+        st.write("- First, go to [GitHub website](https://github.com/) and search for the name **Hikethemike** and look into the **Users** section.")
+        
+        try:
+            st.image(get_image_path("Cloning_1.png"), width=750)
+        except FileNotFoundError:
+            st.warning("Cloning_1.png not found")
+        
+        st.write("- Now go to the **Repositories** section and look for **Codes** repository, click on it.")
+        
+        try:
+            st.image(get_image_path("Cloning_2.png"), width=750)
+        except FileNotFoundError:
+            st.warning("Cloning_2.png not found")
+        
+        st.write("- **Get the HTTPS link**")
+        st.write("  - Click the `<> Code` button")
+        st.write("  - Copy the provided URL")
+        
+        try:
+            st.image(get_image_path("Github_url.png"), width=750)
+        except FileNotFoundError:
+            st.warning("Github_url.png not found")
+        
+        st.write("- Here's the link to my Github Repository: https://github.com/HiketheMike/Codes.git")
+    
+    with st.container(border=True):
+        st.markdown("## **Step 2: Putting it all together**")
+        st.write("1. **Paste the HTTPS URL** (copied from GitHub)")
+        st.write("2. **Set the Local Path** to your Jupyter Lab directory")
+        st.write("   - The folder name (e.g., `Codes`) can be modified")
+        st.write("> Note: Ensure the path matches Jupyter's working directory.")
+        
+        try:
+            st.image(get_image_path("Cloning_6.png"), width=500)
+        except FileNotFoundError:
+            st.warning("Cloning_6.png not found")
+        
+        st.write("- It will Clone the GitHub Repository named **Codes** to your Laptop now.")
+        st.write("- Now go to Jupyter lab and access the folder.")
+    
+    # --- Pulling Repository ---
+    st.markdown("<h2 style='color:red;'>Pulling a GitHub Repository (Updating local folder)</h2>", unsafe_allow_html=True)
+    st.write("*Clone vs Pull*")
+    st.write("- **Clone**: Downloads entire repository (files as-is at current date)")
+    st.write("- **Pull**: Updates your local copy with new changes from remote")
+    st.write("*Checking for Updates*")
+    st.write("1. Click **Fetch Origin** to check for remote changes")
+    st.write("2. If updates exist, **Pull** to sync them locally")
+    
+    try:
+        st.image(get_image_path("Fetch.png"), width=850)
+    except FileNotFoundError:
+        st.warning("Fetch.png not found")
+    
+    st.write("- If there **IS** any changes, then it will show up as **Pull Origin**, otherwise nothing would happen:")
+    
+    try:
+        st.image(get_image_path("Pulling.png"), width=850)
+    except FileNotFoundError:
+        st.warning("Pulling.png not found")
+    
+    st.write("- Click on it, and your local folder will be updated.")
+    
+    st.success("""
+    **Note:** To access the lectures instead:
+    1. At the **File** section, click on **Clone local repository**.
+    2. When searching on **GitHub.com**, use `DROCLB` instead of `Hikethemike` or just click here: [Dr.Omer Cayirli's Repository](https://github.com/DROCLB)
+    3. Redo the previous steps and Clone `Corporate_Finance` repository to access its contents. Now you have access for **files for your course**.
+    """)
+    
+    try:
+        st.image(get_image_path("Clone.png"), width=350)
+    except FileNotFoundError:
+        st.warning("Clone.png not found")
+
+elif selected_guide == "Visual Studio Code":
+    # --- VISUAL STUDIO CODE GUIDE CONTENT ---
+    st.markdown("<h1 style='color:orange;'>Visual Studio Code</h1>", unsafe_allow_html=True)
+    
+    try:
+        st.image(get_image_path("VSC_logo.png"), width=500)
+    except FileNotFoundError:
+        st.warning("VSC_logo.png not found")
+    
+    st.write("- As an Optional Application for your Work, you can choose to use **Jupyter Lab** in Anaconda Navigator, that should suffice.")
+    st.write("- VSC applications is however, very prominent in the industry and we should know how to use it as well.")
+    st.write("- VSC have all the same overview as in Jupyter lab, with little difference.")
+    
+    # --- Installation ---
+    st.markdown("<h2 style='color:red;'>Visual Studio Code Installation</h2>", unsafe_allow_html=True)
+    
+    with st.container(border=True):
+        st.markdown("## **Step 1: Download Visual Studio Code**")
+        st.write("- Go to [Visual Studio Code](https://code.visualstudio.com/download) and choose the version for your system.")
+        
+        try:
+            st.image(get_image_path("VSC_download.png"), width=850)
+        except FileNotFoundError:
+            st.warning("VSC_download.png not found")
+        
+        st.markdown("### 🪟 *Windows Guide*")
+        st.write("- For Windows, we only need to click on either the **Default installation** or the **64-Bit Graphical Installer (912.3M)** to download.")
+        
+        st.markdown("### 🍎*MacOS Guide*")
+        st.write("- For **Visual studio Code**, there is the **universal** installer, download it.")
+        st.write("- This version is compatible for both Intel and Apple Silicon.")
+        st.write("> => Once it is downloaded, run the installer.")
+    
+    with st.container(border=True):
+        st.markdown("### 🐧 *Linux Guide*")
+        st.write("- Choose the correct version of your Linux system and download it.")
+        st.write("- Navigate to where you downloaded the file and right click, choose **Open Terminal in here**.")
+        st.write("- Use the command `sudo apt install ./<file>` or `sudo dpkg -i <file>`.")
+    
+    st.video("https://www.youtube.com/watch?v=NX8SHmkuLn4")
+    
+    with st.container(border=True):
+        st.markdown("## **Step 2: Installation**")
+        st.write("- For both Mac and Windows, the **default options** are sufficient and should not be changed, just click continue and proceed with the installation")
+        st.write("- Open up **Anaconda Navigator** and **Visual Studio Code** should appear as one of the installed apps across all Environments.")
+        
+        try:
+            st.image(get_image_path("Anaconda_VSC.png"), width=850)
+        except FileNotFoundError:
+            st.warning("Anaconda_VSC.png not found")
+        
+        st.write("- And the Interface of Visual studio code should look like this:")
+        
+        try:
+            st.image(get_image_path("VSC_startup.png"), width=850)
+        except FileNotFoundError:
+            st.warning("VSC_startup.png not found")
+        
+        st.write("- Click on the **Mark done** at the bottom to proceed.")
+    
+    with st.container(border=True):
+        st.markdown("## **Step 3: Downloading Extensions**")
+        st.write("- As we are in VSC, we need to download the **Jupyter Notebook** and **python** extension, this is required for VSC to recognize and work with Jupyter Notebook (.ipynb) files.")
+        st.write("- On the top, go to **Search [Administrator]** and type `>Extensions: Install Extensions`, and there should be Extensions appear on the Left of your screen.")
+        st.write("- In that tab, type **Jupyter extension** and install it if you have not installed it")
+        
+        try:
+            st.image(get_image_path("Jupyter_extension.png"), width=850)
+        except FileNotFoundError:
+            st.warning("Jupyter_extension.png not found")
+        
+        st.write("- Do the same for the **Python extension**")
+        
+        try:
+            st.image(get_image_path("Python_extension.png"), width=850)
+        except FileNotFoundError:
+            st.warning("Python_extension.png not found")
+    
+    # --- Creating and Exporting Notebook ---
+    st.markdown("<h2 style='color:red;'>Creating and Exporting a Notebook on VSC</h2>", unsafe_allow_html=True)
+    st.write("- Click on **File**, click on **New File**, and a prompt will pop up, choose **Jupyter Notebook**.")
+    st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
+    
+    try:
+        st.image(get_image_path("Export_VSC.png"), width=750)
+    except FileNotFoundError:
+        st.warning("Export_VSC.png not found")
+    
+    st.write("- Choose **HTML**")
+    
+    # --- Choosing Folder ---
+    st.markdown("<h2 style='color:red;'>Choosing the folder downloaded from Github Desktop</h2>", unsafe_allow_html=True)
+    st.write("- In Visual Studio Code, go to the **Folders symbol** on the left hand side.")
+    st.write("- Unlike **Jupyter Lab**, we need to **Choose** the folder that we need to run")
+    st.write("- Choose **Open Folder** and look for the folder containing the lectures.")
+    
+    try:
+        st.image(get_image_path("VSC_folder.png"), width=350)
+    except FileNotFoundError:
+        st.warning("VSC_folder.png not found")
+    
+    st.success("""
+    **✅ Visual Studio Code is Ready!**
+    You can now use **Visual Studio Code** through Anaconda Navigator
+    """)
