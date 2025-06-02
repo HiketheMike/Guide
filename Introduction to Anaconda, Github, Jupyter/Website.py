@@ -98,7 +98,7 @@ st.markdown("<h2 style='color:red;'>Getting used to Anaconda</h2>", unsafe_allow
 st.markdown("### <span style='color:blue;'> 1. Main Interface Overview</span>", unsafe_allow_html=True)
 with st.container(border=True):
     try:
-        st.image(get_image_path("Anaconda_Navigator.png"), 
+        st.image(get_image_path("Anaconda_navigator.png"), 
                 caption="Anaconda Navigator Main Interface", width=700)
     except FileNotFoundError:
         st.warning("Anaconda navigator interface image not found.")
