@@ -177,8 +177,16 @@ elif selected_guide == "Jupyter Lab":
     except FileNotFoundError:
         st.warning("Lab logo not found. Please ensure the image file exists.")
 
-    st.write("- With the **base(root)** environment chosen navigate to the **Home** section in Anaconda Navigator.")
-    st.write("- Open up **Jupyter Lab**, it should have been automatically installed already, if its not then you're choosing the **wrong environment**.")
+    st.write("## Jupyter Lab: Your Interactive Workspace for Data Science")
+
+    st.write("""
+    **Jupyter Lab** is a powerful, web-based environment designed for interactive computing, data analysis, and scientific research. It provides a flexible and integrated workspace where you can combine live code, explanatory text, mathematical equations, and rich visualizations. Think of it as a dynamic notebook that helps you explore data, develop models, and clearly present your findings.
+
+    * **Interactive Data Exploration:** Run code in small, manageable sections and see results immediately. This allows for quick experimentation, iterative analysis, and deep dives into your data.
+    * **Integrated Documentation & Storytelling:** Seamlessly blend executable code with explanatory text (like notes and instructions), images, and plots. This makes it perfect for creating shareable documents that clearly explain your analytical process step-by-step.
+    * **Versatile and Organized Workspace:** Beyond just interactive notebooks, Jupyter Lab allows you to open and manage various files—such as code scripts, data files, and even command-line terminals—all within a single, organized interface.
+    * **Visualize Data with Ease:** Generate and display charts, graphs, and other visual representations of your data directly within your notebooks, helping you to quickly understand trends and patterns.
+    """)
     
     st.markdown("<h2 style='color:red;'>Basic Operations</h2>", unsafe_allow_html=True)
     st.write("When opening up Jupyter Lab, Select **Python 3(ipykernel)** in the **Notebook** section, this should give make a new Jupyter Notebook file.")
