@@ -173,7 +173,7 @@ elif selected_guide == "Jupyter Lab":
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
 
     try:
-        st.image(get_image_path("Lab logo.jpg"), width=200)
+        st.image(get_image_path("Lab logo.jpg"), width=150)
     except FileNotFoundError:
         st.warning("Lab logo not found. Please ensure the image file exists.")
 
