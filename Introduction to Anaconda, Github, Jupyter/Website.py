@@ -484,12 +484,12 @@ elif selected_guide == "Visual Studio Code":
     
     st.write("- Choose **HTML**")
     
-         # --- Main Overview ---
-    st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
+         # --- Basic Operations ---
+    st.markdown("<h2 style='color:red;'>Basic Operations</h2>", unsafe_allow_html=True)
     st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
     "All operations such as Running cells, adding cells,... can be found top panel.")
 
-    st.write(" - When you first run a cell, Visual Studio code *May* ask you to choose a Python environment like in the picture:")
+    st.write(" - When you **first run a cell**, Visual Studio code *May* ask you to choose a Python environment like in the picture:")
 
     try:
         st.image(get_image_path("python_kernel.png"), width=750)
@@ -505,7 +505,7 @@ elif selected_guide == "Visual Studio Code":
         st.image(get_image_path("Python_environment.png"), width=750)
     except FileNotFoundError:
         st.warning("Python_environment.png not found")
-        
+
     # --- Choosing Folder ---
     st.markdown("<h2 style='color:red;'>Choosing the folder downloaded from Github Desktop</h2>", unsafe_allow_html=True)
     st.write("- In Visual Studio Code, go to the **Folders symbol** on the left hand side.")
