@@ -487,7 +487,7 @@ elif selected_guide == "Visual Studio Code":
          # --- Main Overview ---
     st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
     st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
-    "All operations such as Running cells, adding cells,... are on the top panel alongside the")
+    "All operations such as Running cells, adding cells,... can be found top panel.")
 
     st.write(" - When you first run a cell, Visual Studio code *May* ask you to choose a Python environment like in the picture:")
 
@@ -500,7 +500,7 @@ elif selected_guide == "Visual Studio Code":
     st.write("- Then you will asked to choose Python Environment. If you had accessed Visual Studio Code using **Anaconda**," \
     "it show the **base** environment. This is the standard environment that should be used in the course. But if you have " \
     "your own Python version feel free to use it instead.")
-    
+
     try:
         st.image(get_image_path("Python_environment.png"), width=750)
     except FileNotFoundError:
