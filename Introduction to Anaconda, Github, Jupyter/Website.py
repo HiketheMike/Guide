@@ -107,7 +107,6 @@ if selected_guide == "Anaconda Navigator":
     st.write("### For LINUX")
     st.video("https://www.youtube.com/watch?v=sU2mXjOB-fA")
 
-    st.success("✅ **Anaconda Navigator** is now Ready to be used. You now have access to all the essential tools for the course. There are also video guide below from the Official Anaconda Website.")
 
     # --- Getting Used to Anaconda ---
     st.markdown("<a name='getting-used-to-anaconda'></a>", unsafe_allow_html=True)
@@ -292,13 +291,8 @@ elif selected_guide == "GitHub Desktop":
     st.write("""
     **GitHub Desktop** is a professional, user-friendly application that simplifies how you get and update project files. It's designed for individuals and teams who need to efficiently access and stay current with shared digital assets.
 
-    Here's what it helps you do:
-
     * **Effortless Project Retrieval (Cloning):** Quickly download entire project folders from a central online location directly to your computer.
     * **Seamless Updates (Pulling):** Easily receive the latest changes and additions made by other team members, ensuring you always have the most current version of the project files.
-
-    This tool ensures you maintain an up-to-date local copy of your team's work (in this case - the lectures), providing a reliable way to access
-              and lecture updates without any technical complexity.
     """)
     # --- Installation ---
     st.markdown("<h2 style='color:red;'>GitHub Desktop Installation</h2>", unsafe_allow_html=True)
