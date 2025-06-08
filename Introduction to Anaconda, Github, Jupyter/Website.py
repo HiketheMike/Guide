@@ -36,7 +36,7 @@ if selected_guide == "Anaconda Navigator":
     st.write("**Anaconda Navigator** is your go-to desktop graphical user interface (GUI) for efficient data science and machine learning.")
     st.write("""
     - **Streamlined Workflow Management:** Designed to simplify the execution and oversight of your data science and ML projects.
-    - **Unified Application Portal:** Provides one-click access to critical tools like **Jupyter Notebook**, **Spyder**, and **VS Code**.
+    - **Unified Application Portal:** Provides one-click access to critical tools like **Jupyter Notebook**, **Spyder**.
     - **Comprehensive Environment & Package Management:** Ensures a consistent, version-controlled development environment.
     - **Simplified Setup:** A single download eliminates complex installations, getting you productive faster.
     """)
