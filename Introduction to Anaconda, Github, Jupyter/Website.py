@@ -362,7 +362,7 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Cloning_6.png not found")
         
-        st.write("- It will Clone the GitHub Repository named **Codes** to your Laptop in the specified folder above." \
+        st.write("- It will Clone the GitHub Repository named **Financial_Tools** to your Laptop in the specified folder above." \
         " Keep in mind your chosen folder location on your computer as they will be constantly updated and you will need to " \
         " check for them often.")
         st.write("- Now go to Jupyter lab and you should see the folder in the folders panel (see Jupyter Lab guide). Or If you're using Visual Studio Code, choose" \
@@ -495,7 +495,3 @@ elif selected_guide == "Visual Studio Code":
     except FileNotFoundError:
         st.warning("VSC_folder.png not found")
     
-    st.success("""
-    **✅ Visual Studio Code is Ready!**
-    You can now use **Visual Studio Code** through Anaconda Navigator
-    """)
