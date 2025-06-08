@@ -496,8 +496,11 @@ elif selected_guide == "Visual Studio Code":
     except FileNotFoundError:
         st.warning("python_kernel.png not found")
 
-    st.write(" - Simply choose 'Select Another Kernel' then on the selection choose 'Python Environments'.")
-
+    st.write(" - Simply choose 'Select Another Kernel' then on the next selection choose 'Python Environments'.")
+    st.write("- Then you will asked to choose Python Environment. If you had accessed Visual Studio Code using **Anaconda**," \
+    "it show the **base** environment. This is the standard environment that should be used in the course. But if you have " \
+    "your own Python version feel free to use it instead.")
+    
     try:
         st.image(get_image_path("Python_environment.png"), width=750)
     except FileNotFoundError:
