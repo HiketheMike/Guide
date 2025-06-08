@@ -421,7 +421,8 @@ elif selected_guide == "Visual Studio Code":
 
     * **Supports Many Languages:** Whether you're working with Python, web technologies like HTML and CSS, or other programming languages, VSC can handle them all. It provides helpful features specific to each language, making coding smoother.
     * **Smart Assistance:** As you type, VSC offers smart suggestions and highlights errors, which speeds up your work and helps you write cleaner, more accurate code.
-    * **Customizable Workspace:** You can personalize VSC with various extensions to add new features, change its appearance, or integrate with other tools you use. This flexibility allows you to set up your ideal working environment.
+    * **Customizable Workspace:** You can personalize VSC with various extensions to add new features (e.g adding the Jupyter Notebook Extension - to enable usage of Jupyter Notebooks in VSC), change its appearance, or integrate with other tools you use. This flexibility allows you to set up your ideal working environment.
+                                  
     * **Integrated Terminal:** You can run commands and interact with your project directly within VSC, removing the need to switch between different applications.
 
     """)
