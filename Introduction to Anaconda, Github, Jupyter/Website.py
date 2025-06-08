@@ -349,8 +349,9 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Cloning_6.png not found")
         
-        st.write("- It will Clone the GitHub Repository named **Codes** to your Laptop now.")
-        st.write("- Now go to Jupyter lab and access the folder.")
+        st.write("- It will Clone the GitHub Repository named **Codes** to your Laptop in the specified folder above." \
+        "Keep in mind your chosen folder location on your computer as they will be constantly updated and you will need to check them often.")
+        st.write("- Now go to Jupyter lab and you should see the folder in the folders panel.")
     
     # --- Pulling Repository ---
     st.markdown("<h2 style='color:red;'>Pulling a GitHub Repository (Updating local folder)</h2>", unsafe_allow_html=True)
@@ -374,7 +375,14 @@ elif selected_guide == "GitHub Desktop":
         st.warning("Pulling.png not found")
     
     st.write("- Click on it, and your local folder will be updated.")
+    st.write("After Pulling, Check the contents in the Folder where you kept the files," \
+    "there ")
 
+    
+    try:
+        st.image(get_image_path("Clone.png"), width=350)
+    except FileNotFoundError:
+        st.warning("Clone.png not found")
 
 elif selected_guide == "Visual Studio Code":
     # --- VISUAL STUDIO CODE GUIDE CONTENT ---
