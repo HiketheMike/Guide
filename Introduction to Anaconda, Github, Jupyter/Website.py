@@ -352,7 +352,8 @@ elif selected_guide == "GitHub Desktop":
     with st.container(border=True):
         st.markdown("## **Step 2: Putting it all together**")
         st.write("1. **Paste the HTTPS URL** (copied from GitHub)")
-        st.write("2. **Set the Local Path**. Note: You can set it to whatever folder you want just remember where you chose it"
+        st.write("2. **Set the Local Path**)")
+        st.write(" You can set it to whatever folder you want just remember where you chose it"
         ". However, if you are using Jupyter Lab, a **strict** condition is that the" \
         "directory is the same as the one Jupyter Lab is currently access (Review the Jupyter Lab Guide). ")
         st.write("   - The folder name (e.g., `Codes`) can be modified")
