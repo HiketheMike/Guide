@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 # Set forced white background
+st.set_page_config(layout="wide")
 st.markdown(
     """
     <style>
