@@ -180,7 +180,7 @@ elif selected_guide == "Jupyter Lab":
     st.write("## Jupyter Lab: Your Interactive Workspace for Data Science")
 
     st.write("""
-    **Jupyter Lab** is a powerful, web-based environment designed for interactive computing, data analysis, and scientific research. It provides a flexible and integrated workspace where you can combine live code, explanatory text, mathematical equations, and rich visualizations. Think of it as a dynamic notebook that helps you explore data, develop models, and clearly present your findings.
+    **Jupyter Lab** is a powerful, web-based environment designed for interactive computing, data analysis, and scientific research. It provides a flexible and integrated workspace where you can combine live code, explanatory text, mathematical equations, and rich visualizations.
 
     * **Interactive Data Exploration:** Run code in small, manageable sections and see results immediately. This allows for quick experimentation, iterative analysis, and deep dives into your data.
     * **Integrated Documentation & Storytelling:** Seamlessly blend executable code with explanatory text (like notes and instructions), images, and plots. This makes it perfect for creating shareable documents that clearly explain your analytical process step-by-step.
