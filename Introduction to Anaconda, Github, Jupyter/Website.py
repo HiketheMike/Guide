@@ -3,6 +3,18 @@ from PIL import Image
 import os
 from pathlib import Path
 
+# Set forced white background
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Set page config
 st.set_page_config(layout="wide")
 
