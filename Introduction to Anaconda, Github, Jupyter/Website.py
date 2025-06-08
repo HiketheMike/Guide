@@ -5,6 +5,7 @@ from pathlib import Path
 
 # Set forced white background
 st.set_page_config(layout="wide")
+
 st.markdown(
     """
     <style>
@@ -15,9 +16,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# Set page config
-st.set_page_config(layout="wide")
 
 # Helper function to get correct image paths
 def get_image_path(image_name):
