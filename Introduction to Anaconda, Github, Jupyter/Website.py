@@ -318,7 +318,7 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Cloning_1.png not found")
         
-        st.write("- Now go to the **Repositories** section and look for **Codes** repository, click on it.")
+        st.write("- Now go to the **Repositories** section and look for **Financial_Tools** repository, click on it.")
         
         try:
             st.image(get_image_path("Cloning_2.png"), width=750)
@@ -334,7 +334,8 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Github_url.png not found")
         
-        st.write("- Here's the link to my Github Repository: https://github.com/HiketheMike/Codes.git")
+        st.write("- It's a good practice to know where to get the files, you can however quickly access the link by clickin here" \
+        " https://github.com/DROCLB/Financial_Tools.git")
     
     with st.container(border=True):
         st.markdown("## **Step 2: Putting it all together**")
