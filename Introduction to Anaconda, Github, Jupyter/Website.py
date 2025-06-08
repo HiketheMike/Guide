@@ -374,8 +374,8 @@ elif selected_guide == "GitHub Desktop":
     st.write("- **Clone**: Downloads entire repository (files as-is at current date)")
     st.write("- **Pull**: Updates your local copy with new changes from remote")
     st.write("*Checking for Updates*")
-    st.write("1. Click **Fetch Origin** to check for remote changes")
-    st.write("2. If updates exist, **Pull** to sync them locally")
+    st.write("- Click **Fetch Origin** to check for remote changes")
+    st.write("- If updates exist, **Pull** to sync them locally")
     
     try:
         st.image(get_image_path("Fetch.png"), width=850)
