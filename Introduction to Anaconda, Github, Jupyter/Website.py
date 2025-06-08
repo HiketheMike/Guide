@@ -481,6 +481,7 @@ elif selected_guide == "Visual Studio Code":
     st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
     "All operations such as Running cells, adding cells,... are on the top panel")
     st.write(" - When you first run a cell, Visual Studio code would ask you to choose a Python ")
+    
     st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
 
     try:
