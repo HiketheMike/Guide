@@ -404,12 +404,10 @@ elif selected_guide == "Visual Studio Code":
     st.write("""
     **Visual Studio Code (VSC)** is a free and powerful tool that helps you write, edit, and understand different types of code. It's incredibly popular because it's easy to use and can be customized to fit almost any project. Think of it as a highly adaptable digital notebook specifically designed for working with software.
 
-    Here's why VSC is so widely used:
 
     * **Supports Many Languages:** Whether you're working with Python, web technologies like HTML and CSS, or other programming languages, VSC can handle them all. It provides helpful features specific to each language, making coding smoother.
     * **Smart Assistance:** As you type, VSC offers smart suggestions and highlights errors, which speeds up your work and helps you write cleaner, more accurate code.
     * **Customizable Workspace:** You can personalize VSC with various extensions to add new features, change its appearance, or integrate with other tools you use. This flexibility allows you to set up your ideal working environment.
-    * **Debugging Tools:** If you encounter problems in your code, VSC includes built-in tools that help you find and fix issues efficiently, saving you time and frustration.
     * **Integrated Terminal:** You can run commands and interact with your project directly within VSC, removing the need to switch between different applications.
 
     VSC is an essential tool for developers and anyone involved in digital projects, offering a centralized and efficient space for all your coding and editing needs.
