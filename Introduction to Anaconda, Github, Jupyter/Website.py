@@ -171,11 +171,12 @@ if selected_guide == "Anaconda Navigator":
 elif selected_guide == "Jupyter Lab":
 
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
+
     try:
-        st.image(get_image_path("Lab logo.jpg"), width=500)
+        st.image(get_image_path("Lab logo.jpg"), width=200)
     except FileNotFoundError:
         st.warning("Lab logo not found. Please ensure the image file exists.")
-        
+
     st.write("- With the **base(root)** environment chosen navigate to the **Home** section in Anaconda Navigator.")
     st.write("- Open up **Jupyter Lab**, it should have been automatically installed already, if its not then you're choosing the **wrong environment**.")
     
