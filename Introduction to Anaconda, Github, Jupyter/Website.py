@@ -6,17 +6,6 @@ from pathlib import Path
 # Set forced white background
 st.set_page_config(layout="wide")
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Helper function to get correct image paths
 def get_image_path(image_name):
     base_path = Path(__file__).parent
