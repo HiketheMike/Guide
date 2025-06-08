@@ -488,13 +488,20 @@ elif selected_guide == "Visual Studio Code":
     st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
     st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
     "All operations such as Running cells, adding cells,... are on the top panel alongside the")
-    st.write(" - When you first run a cell, Visual Studio code *May* ask you to choose a Python environment.")
+
+    st.write(" - When you first run a cell, Visual Studio code *May* ask you to choose a Python environment like in the picture:")
 
     try:
         st.image(get_image_path("python_kernel.png"), width=750)
     except FileNotFoundError:
         st.warning("python_kernel.png not found")
-    
+
+    st.write(" - Simply choose 'Select Another Kernel' then on the selection choose 'Python Environments'.")
+
+    try:
+        st.image(get_image_path("Python_environment.png"), width=750)
+    except FileNotFoundError:
+        st.warning("Python_environment.png not found")
 
     st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
     # --- Choosing Folder ---
