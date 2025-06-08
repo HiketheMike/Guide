@@ -392,8 +392,6 @@ elif selected_guide == "GitHub Desktop":
     st.write("- Click on it, and your local folder will be updated.")
     st.write("- After Pulling, Check the contents in the Folder to see the updated files.")
 
-
-
 elif selected_guide == "Visual Studio Code":
     # --- VISUAL STUDIO CODE GUIDE CONTENT ---
     st.markdown("<h1 style='color:orange;'>Visual Studio Code</h1>", unsafe_allow_html=True)
