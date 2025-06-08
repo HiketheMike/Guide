@@ -374,13 +374,7 @@ elif selected_guide == "GitHub Desktop":
         st.warning("Pulling.png not found")
     
     st.write("- Click on it, and your local folder will be updated.")
-    
 
-    
-    try:
-        st.image(get_image_path("Clone.png"), width=350)
-    except FileNotFoundError:
-        st.warning("Clone.png not found")
 
 elif selected_guide == "Visual Studio Code":
     # --- VISUAL STUDIO CODE GUIDE CONTENT ---
