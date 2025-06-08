@@ -375,6 +375,8 @@ elif selected_guide == "GitHub Desktop":
     
     st.write("- Click on it, and your local folder will be updated.")
     
+
+    
     try:
         st.image(get_image_path("Clone.png"), width=350)
     except FileNotFoundError:
