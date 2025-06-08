@@ -274,6 +274,18 @@ elif selected_guide == "GitHub Desktop":
     except FileNotFoundError:
         st.warning("Github_desktop.png not found")
     
+    st.write("GitHub Desktop: Simple Access to Project Files")
+
+    st.write("""
+    **GitHub Desktop** is a professional, user-friendly application that simplifies how you get and update project files. It's designed for individuals and teams who need to efficiently access and stay current with shared digital assets.
+
+    Here's what it helps you do:
+
+    * **Effortless Project Retrieval (Cloning):** Quickly download entire project folders from a central online location directly to your computer.
+    * **Seamless Updates (Pulling):** Easily receive the latest changes and additions made by other team members, ensuring you always have the most current version of the project files.
+
+    This tool ensures you maintain an up-to-date local copy of your team's work, providing a reliable way to access and follow project developments without any technical complexity.
+    """)
     # --- Installation ---
     st.markdown("<h2 style='color:red;'>GitHub Desktop Installation</h2>", unsafe_allow_html=True)
     
@@ -334,7 +346,7 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Github_url.png not found")
         
-        st.write("- It's a good practice to know where to get the files, you can however quickly access the link by clicking here" \
+        st.write("- It's a good practice to know where to get to a github repository by yourself, you can however quickly access the link by clicking here" \
         " https://github.com/DROCLB/Financial_Tools.git")
     
     with st.container(border=True):
@@ -350,7 +362,8 @@ elif selected_guide == "GitHub Desktop":
             st.warning("Cloning_6.png not found")
         
         st.write("- It will Clone the GitHub Repository named **Codes** to your Laptop in the specified folder above." \
-        "Keep in mind your chosen folder location on your computer as they will be constantly updated and you will need to check them often.")
+        " Keep in mind your chosen folder location on your computer as they will be constantly updated and you will need to " \
+        " check for them often.")
         st.write("- Now go to Jupyter lab and you should see the folder in the folders panel.")
     
     # --- Pulling Repository ---
