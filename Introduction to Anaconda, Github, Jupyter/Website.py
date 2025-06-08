@@ -334,7 +334,7 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Github_url.png not found")
         
-        st.write("- It's a good practice to know where to get the files, you can however quickly access the link by clickin here" \
+        st.write("- It's a good practice to know where to get the files, you can however quickly access the link by clicking here" \
         " https://github.com/DROCLB/Financial_Tools.git")
     
     with st.container(border=True):
@@ -374,13 +374,6 @@ elif selected_guide == "GitHub Desktop":
         st.warning("Pulling.png not found")
     
     st.write("- Click on it, and your local folder will be updated.")
-    
-    st.success("""
-    **Note:** To access the lectures instead:
-    1. At the **File** section, click on **Clone local repository**.
-    2. When searching on **GitHub.com**, use `DROCLB` instead of `Hikethemike` or just click here: [Dr.Omer Cayirli's Repository](https://github.com/DROCLB)
-    3. Redo the previous steps and Clone `Corporate_Finance` repository to access its contents. Now you have access for **files for your course**.
-    """)
     
     try:
         st.image(get_image_path("Clone.png"), width=350)
