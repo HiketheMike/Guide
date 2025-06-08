@@ -353,9 +353,9 @@ elif selected_guide == "GitHub Desktop":
         st.markdown("## **Step 2: Putting it all together**")
         st.write("1. **Paste the HTTPS URL** (copied from GitHub)")
         st.write("2. **Set the Local Path**)")
-        st.write(" -   You can set it to whatever folder you want just remember where you chose it"
+        st.write(" -   You can freely choose any folder to place the files in"
         ". However, if you are using Jupyter Lab, a **strict** condition is that the" \
-        "directory is the same as the one Jupyter Lab is currently access (Review the Jupyter Lab Guide). ")
+        " directory is the same as the one Jupyter Lab is currently access (Review the Jupyter Lab Guide). ")
         st.write("   - The folder name (e.g., `Codes`) can be modified")
         
         try:
@@ -366,8 +366,8 @@ elif selected_guide == "GitHub Desktop":
         st.write("- It will Clone the GitHub Repository named **Codes** to your Laptop in the specified folder above." \
         " Keep in mind your chosen folder location on your computer as they will be constantly updated and you will need to " \
         " check for them often.")
-        st.write("- Now go to Jupyter lab and you should see the folder in the folders panel (available in Jupyter Lab guide). Or If you're using Visual Studio Code, choose" \
-        "add folder to work space (available in Visual Studio Code guide)")
+        st.write("- Now go to Jupyter lab and you should see the folder in the folders panel (see Jupyter Lab guide). Or If you're using Visual Studio Code, choose" \
+        " 'add folder to work space' (see Visual Studio Code guide)")
     
     # --- Pulling Repository ---
     st.markdown("<h2 style='color:red;'>Pulling a GitHub Repository (Updating local folder)</h2>", unsafe_allow_html=True)
