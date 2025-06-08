@@ -274,7 +274,6 @@ elif selected_guide == "GitHub Desktop":
     except FileNotFoundError:
         st.warning("Github_desktop.png not found")
     
-    st.write("GitHub Desktop: Simple Access to Project Files")
 
     st.write("""
     **GitHub Desktop** is a professional, user-friendly application that simplifies how you get and update project files. It's designed for individuals and teams who need to efficiently access and stay current with shared digital assets.
@@ -284,7 +283,8 @@ elif selected_guide == "GitHub Desktop":
     * **Effortless Project Retrieval (Cloning):** Quickly download entire project folders from a central online location directly to your computer.
     * **Seamless Updates (Pulling):** Easily receive the latest changes and additions made by other team members, ensuring you always have the most current version of the project files.
 
-    This tool ensures you maintain an up-to-date local copy of your team's work, providing a reliable way to access and follow project developments without any technical complexity.
+    This tool ensures you maintain an up-to-date local copy of your team's work (in this case - the lectures), providing a reliable way to access
+              and lecture updates without any technical complexity.
     """)
     # --- Installation ---
     st.markdown("<h2 style='color:red;'>GitHub Desktop Installation</h2>", unsafe_allow_html=True)
