@@ -469,12 +469,20 @@ elif selected_guide == "Visual Studio Code":
             st.image(get_image_path("Python_extension.png"), width=850)
         except FileNotFoundError:
             st.warning("Python_extension.png not found")
-    
+
+
     # --- Creating and Exporting Notebook ---
     st.markdown("<h2 style='color:red;'>Creating and Exporting a Notebook on VSC</h2>", unsafe_allow_html=True)
     st.write("- Click on **File**, click on **New File**, and a prompt will pop up, choose **Jupyter Notebook**.")
     st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
     
+     # --- Main Overview ---
+    st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
+    st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
+    "All operations such as Running cells, adding cells,... are on the top panel")
+    st.write(" - When you first run a cell, Visual Studio code would ask you to choose a Python ")
+    st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
+
     try:
         st.image(get_image_path("Export_VSC.png"), width=750)
     except FileNotFoundError:
