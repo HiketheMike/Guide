@@ -28,7 +28,7 @@ if selected_guide == "Anaconda Navigator":
 
     # Load Anaconda logo
     try:
-        st.image(get_image_path("Anaconda logo.jpg"), caption="Anaconda Logo", width=500)
+        st.image(get_image_path("Anaconda logo.jpg"), width=500)
     except FileNotFoundError:
         st.warning("Anaconda logo image not found. Please ensure the image file exists.")
         
@@ -169,6 +169,11 @@ if selected_guide == "Anaconda Navigator":
         st.write("(Works in Jupyter Lab or VS Code **code** cells, as shown below)")
 
 elif selected_guide == "Jupyter Lab":
+    try:
+        st.image(get_image_path("Lab logo.jpg"), width=500)
+    except FileNotFoundError:
+        st.warning("Lab logo not found. Please ensure the image file exists.")
+
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
     
     st.write("- With the **base(root)** environment chosen navigate to the **Home** section in Anaconda Navigator.")
