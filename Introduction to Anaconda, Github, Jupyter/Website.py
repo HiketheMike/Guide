@@ -212,11 +212,10 @@ elif selected_guide == "Jupyter Lab":
     
     st.code(
     """
-    st.markdown("<span style='color:red'>Colored text</span>", unsafe_allow_html=True)
-    st.markdown("<div style='border:2px solid black; padding:10px'>Bordered box</div>", unsafe_allow_html=True)
-    st.markdown("<div class='alert alert-info'>Info alert box</div>", unsafe_allow_html=True)
-    """
-    , language='python')
+    <span style='color:red'>Colored text</span>
+    <div style='border:2px solid black; padding:10px'>Bordered box</div>
+    <div class='alert alert-info'>Info alert box</div>
+    """, language='python')
     
     st.write("*Raw Cells*")
     st.write("- Plain text **without any formatting**")
