@@ -476,13 +476,6 @@ elif selected_guide == "Visual Studio Code":
     st.write("- Click on **File**, click on **New File**, and a prompt will pop up, choose **Jupyter Notebook**.")
     st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
     
-     # --- Main Overview ---
-    st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
-    st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
-    "All operations such as Running cells, adding cells,... are on the top panel")
-    st.write(" - When you first run a cell, Visual Studio code would ask you to choose a Python ")
-    
-    st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
 
     try:
         st.image(get_image_path("Export_VSC.png"), width=750)
@@ -491,6 +484,19 @@ elif selected_guide == "Visual Studio Code":
     
     st.write("- Choose **HTML**")
     
+         # --- Main Overview ---
+    st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
+    st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
+    "All operations such as Running cells, adding cells,... are on the top panel alongside the")
+    st.write(" - When you first run a cell, Visual Studio code *May* ask you to choose a Python environment.")
+
+    try:
+        st.image(get_image_path("python_kernel.png"), width=750)
+    except FileNotFoundError:
+        st.warning("python_kernel.png not found")
+    
+
+    st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
     # --- Choosing Folder ---
     st.markdown("<h2 style='color:red;'>Choosing the folder downloaded from Github Desktop</h2>", unsafe_allow_html=True)
     st.write("- In Visual Studio Code, go to the **Folders symbol** on the left hand side.")
