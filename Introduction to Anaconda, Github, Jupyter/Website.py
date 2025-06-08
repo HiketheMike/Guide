@@ -311,7 +311,7 @@ elif selected_guide == "GitHub Desktop":
     
     with st.container(border=True):
         st.markdown("## **Step 1: Obtain the URL**")
-        st.write("- First, go to [GitHub website](https://github.com/) and search for the name **Hikethemike** and look into the **Users** section.")
+        st.write("- First, go to [GitHub website](https://github.com/) and search for the name **DROCLB** and look into the **Users** section.")
         
         try:
             st.image(get_image_path("Cloning_1.png"), width=750)
