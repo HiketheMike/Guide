@@ -544,7 +544,7 @@ elif selected_guide == "Visual Studio Code":
         st.warning("Python_environment.png not found")
 
     # --- Choosing Folder ---
-    st.markdown("<h2 style='color:red;'>Choosing the folder downloaded from Github Desktop</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:red;'>Accessing Folders</h2>", unsafe_allow_html=True)
     st.write("- In Visual Studio Code, go to the **Folders symbol** on the left hand side.")
     st.write("- Unlike **Jupyter Lab**, we need to **Choose** the folder that we need to run")
     st.write("- Choose **Open Folder** and look for the folder containing the lectures.")
