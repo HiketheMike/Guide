@@ -130,7 +130,7 @@ if selected_guide == "Anaconda Navigator":
         | Community   | Anaconda community resources    |
         """)
 
-    st.markdown("### <span style='color:blue;'> 2. Managing Environments</span>", unsafe_allow_html=True)
+    st.markdown("### <span style='color:blue;'> 2. Managing Environments (can be ignored if you needn't to use python extensively) </span>", unsafe_allow_html=True)
     with st.container(border=True):
         try:
             st.image(get_image_path("Anaconda_environments.png"), 
