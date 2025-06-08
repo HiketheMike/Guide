@@ -337,8 +337,7 @@ elif selected_guide == "GitHub Desktop":
         except FileNotFoundError:
             st.warning("Cloning_2.png not found")
         
-        st.write("- **Get the HTTPS link**")
-        st.write("  - Click the `<> Code` button")
+        st.write("  - Get the HTTPS link by Click the `<> Code` button")
         st.write("  - Copy the provided URL")
         
         try:
@@ -391,14 +390,9 @@ elif selected_guide == "GitHub Desktop":
         st.warning("Pulling.png not found")
     
     st.write("- Click on it, and your local folder will be updated.")
-    st.write("After Pulling, Check the contents in the Folder where you kept the files," \
-    "there ")
+    st.write("- After Pulling, Check the contents in the Folder to see the updated files.")
 
-    
-    try:
-        st.image(get_image_path("Clone.png"), width=350)
-    except FileNotFoundError:
-        st.warning("Clone.png not found")
+
 
 elif selected_guide == "Visual Studio Code":
     # --- VISUAL STUDIO CODE GUIDE CONTENT ---
