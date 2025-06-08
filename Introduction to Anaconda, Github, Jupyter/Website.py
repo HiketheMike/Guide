@@ -174,7 +174,7 @@ elif selected_guide == "Jupyter Lab":
     st.write("- With the **base(root)** environment chosen navigate to the **Home** section in Anaconda Navigator.")
     st.write("- Open up **Jupyter Lab**, it should have been automatically installed already, if its not then you're choosing the **wrong environment**.")
     
-    st.markdown("<h2 style='color:red;'>Main Overview</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:red;'>Basic Operations</h2>", unsafe_allow_html=True)
     st.write("When opening up Jupyter Lab, Select **Python 3(ipykernel)** in the **Notebook** section, this should give make a new Jupyter Notebook file.")
     st.write("Jupyter supports 3 cell types for mixed code and documentation:")
     st.write("1. **Code Cells** - For executable code")
@@ -487,7 +487,23 @@ elif selected_guide == "Visual Studio Code":
          # --- Basic Operations ---
     st.markdown("<h2 style='color:red;'>Basic Operations</h2>", unsafe_allow_html=True)
     st.write("- Much like Jupyter Lab, there are **Markdown** and **Code** cells, where you can write codes or plain text. " \
-    "All operations such as Running cells, adding cells,... can be found top panel.")
+    "All operations such as Running cells, adding cells,... can be found top panel. Shortcuts are also available")
+
+    st.markdown("""
+    | Action                        | Shortcut                     |
+    | ----------------------------- | ---------------------------- |
+    | Run cell (stay in cell)       | `Ctrl/Cmd + Enter`           |
+    | Add cell below                | `B`                          |
+    | Add cell above                | `A`                          |
+    | Delete selected cell          | `D` then `D` (press D twice) |
+    | Copy cell                     | `C`                          |
+    | Cut cell                      | `X`                          |
+    | Paste cell below              | `V`                          |
+    | Paste cell above              | `Shift + V`                  |
+    | Change to Markdown cell       | `M`                          |
+    | Change to Code cell           | `Y`                          |
+    | Saving the file               | `Ctrl/Cmd + S`               |
+    """)
 
     st.write(" - When you **first run a cell**, Visual Studio code *May* ask you to choose a Python environment like in the picture:")
 
