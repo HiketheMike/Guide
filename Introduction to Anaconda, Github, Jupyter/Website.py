@@ -410,7 +410,6 @@ elif selected_guide == "Visual Studio Code":
     * **Customizable Workspace:** You can personalize VSC with various extensions to add new features, change its appearance, or integrate with other tools you use. This flexibility allows you to set up your ideal working environment.
     * **Integrated Terminal:** You can run commands and interact with your project directly within VSC, removing the need to switch between different applications.
 
-    VSC is an essential tool for developers and anyone involved in digital projects, offering a centralized and efficient space for all your coding and editing needs.
     """)
     
     # --- Installation ---
