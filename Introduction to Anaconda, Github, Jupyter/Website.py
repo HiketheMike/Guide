@@ -505,8 +505,7 @@ elif selected_guide == "Visual Studio Code":
         st.image(get_image_path("Python_environment.png"), width=750)
     except FileNotFoundError:
         st.warning("Python_environment.png not found")
-
-    st.write("- To export a File, click on the **Ellipsis** here and choose **Export**.")
+        
     # --- Choosing Folder ---
     st.markdown("<h2 style='color:red;'>Choosing the folder downloaded from Github Desktop</h2>", unsafe_allow_html=True)
     st.write("- In Visual Studio Code, go to the **Folders symbol** on the left hand side.")
