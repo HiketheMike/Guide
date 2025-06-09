@@ -359,7 +359,7 @@ elif selected_guide == "GitHub Desktop":
     with st.container(border=True):
         st.markdown("## **Step 2: Putting it all together**")
         st.write("1. **Paste the HTTPS URL** (copied from GitHub)")
-        st.write("2. **Set the Local Path**)")
+        st.write("2. **Set the Local Path**")
         st.write(" -   You can freely choose any folder to place the files in"
         ". However, if you are using Jupyter Lab, a **strict** condition is that the" \
         " directory is the same as the one Jupyter Lab is currently access (Review the Jupyter Lab Guide). ")
@@ -398,7 +398,7 @@ elif selected_guide == "GitHub Desktop":
         st.warning("Pulling.png not found")
     
     st.write("- Click on it, and your local folder will be updated.")
-    st.write("- After Pulling, Check the contents in the Folder to see the updated files.")
+    st.write("- After Pulling, check the contents in the Folder to see the updated files.")
 
 elif selected_guide == "Visual Studio Code":
     # --- VISUAL STUDIO CODE GUIDE CONTENT ---
