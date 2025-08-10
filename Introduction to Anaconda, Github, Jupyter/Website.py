@@ -89,3 +89,4 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     """)
 
 elif selected_guide == "GitHub Desktop":
+    st.markdown("<h1 style='color:orange;'>Github Desktop</h1>", unsafe_allow_html=True)
