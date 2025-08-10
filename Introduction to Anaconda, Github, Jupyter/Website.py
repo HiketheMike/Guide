@@ -23,6 +23,7 @@ selected_guide = st.sidebar.selectbox(
 # The content for each guide is removed, leaving a blank page for now.
 # You can add new content here based on the selected_guide variable.
 if selected_guide == "Anaconda Navigator":
+    st.markdown("<h1 style='color:orange;'>Anaconda Navigator</h1>", unsafe_allow_html=True)
     # Use columns to center the image and its caption
     col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
     with col2:
@@ -42,15 +43,15 @@ if selected_guide == "Anaconda Navigator":
     Visit https://www.anaconda.com/docs/tools/anaconda-navigator/getting-started.
     """)
 
-elif selected_guide == "Jupyter Lab":
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
     st.write("Content for Jupyter Lab will go here.")
      
-elif selected_guide == "GitHub Desktop":
+
     st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
     st.write("Content for GitHub Desktop will go here.")
 
-elif selected_guide == "Visual Studio Code":
+
+elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     st.markdown("<h1 style='color:orange;'>Visual Studio Code and Jupyter Notebooks</h1>", unsafe_allow_html=True)
 
 
@@ -86,3 +87,5 @@ elif selected_guide == "Visual Studio Code":
 
     => With Visual Studio Code, we can run Notebooks that contain codes that can be used to create graphs or simulations that the lecturer creates which helps create a more dynamic studying activities. Moreover, the use to Markdown text cells allows for explanations and formulas alongside the code outputs.
     """)
+
+elif selected_guide == "GitHub Desktop":
