@@ -24,8 +24,7 @@ selected_guide = st.sidebar.selectbox(
 # You can add new content here based on the selected_guide variable.
 if selected_guide == "Anaconda Navigator":
     st.markdown("<h1 style='color:orange;'>Anaconda Navigator</h1>", unsafe_allow_html=True)
-    st.image(get_image_path("anaconda_icon.jpg"), width=596)
-    st.image(get_image_path("anaconda_menu.png"), width=595)
+    st.image(get_image_path("anaconda_menu.png"), width=400)
     st.write("") # Adds a blank line for spacing
     st.markdown("""
     Anaconda Navigator is a **graphical user interface (GUI)** that simplifies the use of Python for environment management and data science. It comes with the Python language when installed, however it also allows for ease of "Virtual Environments" management unlike the individual Python.
@@ -54,9 +53,6 @@ elif selected_guide == "Visual Studio Code":
 
     # VSC logo (centered)
     col1, col2, col3 = st.columns([1, 2, 1]) # Use columns to help center the image
-    with col1:
-        st.image(get_image_path("VSC_icon.jpg"), width=300)
-    st.write("") # Add a blank line for spacing
 
     # VSC Interface and Required extensions (side-by-side)
     col_left, col_right = st.columns(2)
