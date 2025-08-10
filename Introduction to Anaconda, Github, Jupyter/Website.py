@@ -107,12 +107,17 @@ elif selected_guide == "GitHub Desktop":
 
     st.markdown("""
     - **Installation:** Go to https://desktop.github.com/download/, and download the suitable version for your device. After finishing the installation, you will be prompted to create a GitHub account, you can skip this if you want and do it later.
-    - **Pulling (Download from online repository):**
+    - **Cloning (Download from online repository):**
         1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
         2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
 
-    **=>** You will need the URL to the remote repository, such URLS can be found following this example:
+    **=>** Either way you choose, you will need the URL to the remote repository, such URLS can be found following this example:
+
+    - **Fetching and Pulling (Update from online repository):** Once you have a cloned repo, it is possible that the owner of the repo updated some files, in that case we would use the Fetch button and 2 things will happen:
+        1.  You pressed the **Fetch Origin** button on top and nothing happens, this means that the files are up-to-date.
+        2.  You pressed the **Fetch Origin** button and it becomes **Pull Origin**, this means that there are updates to the local files. If you get this prompt, pressed **Pull Origin**, and go to where you stored your local folder, changes will be made there.
     """)
+    
     st.write("") # Adds a blank line for spacing
     # Use columns to center the video and its caption
     col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
