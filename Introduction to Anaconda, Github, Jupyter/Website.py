@@ -63,18 +63,18 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     Visual Studio Code is an Integrated Development Environment (IDE) that allows us to use many programming languages (e.g R, Python, C++,...). It comes with many extensions that allows for flexibility and versatility, one of these extensions include the "Jupyter" extension, which allows you to read and write with Jupyter Notebook files (.ipynb files).
 
     - **Installation:** Go to https://code.visualstudio.com/download, and download the version suitable with your device operating system.
-
+    ""
                 
     - **Setting up Jupyter and Python extension:** Following the VSC interface above...
 
         1.  Go to Activity Bar and find **Extensions**.
         2.  In the **Extensions** tab, there is a search bar, type "Jupyter" and click on "Jupyter" in search results, you will be asked to install the extension. Repeat this step for the "Python" extension. After that, clear the search bar, and make sure that Jupyter/ Python and its extra components are installed (for reference, look at **Required extensions**).
-
+    ""
                 
     - **Opening a Jupyter Notebook:** After that, go to the activity bar and look for **Explorer**, in here there are 2 options for you to open a Jupyter notebook file...  
         1.  Right-click --> "Add Folder to workspace": allows you to choose the folder that contain the Jupyter notebook file and read it. However unlike opening individual files, this functions allows you to *access other dependencies* such as pictures and videos that are embeded to a local notebook. If you open a notebook and see some missing pictures, then you would need to use this function instead.
         2.  Right-click --> New File --> Jupyter Notebook: allows you to make a new notebook and use it.
-
+    ""
                 
     - **Running a Jupyter Notebook:** A Jupyter notebook allows you to *write codes* and *plain texts*, to run code cell...
         1.  Click on a cell and press the "Run" button. If you want to run the entire notebook, look on top of the **Editor** there should be a "Run all" button.
@@ -120,7 +120,8 @@ elif selected_guide == "GitHub Desktop":
     with col2:
         st.video("https://youtu.be/U9AVfBaTKZs") # Use the YouTube URL directly
         st.markdown("<div style='text-align: center;'>A short guide on GitHub Desktop</div>", unsafe_allow_html=True)
-    
+
+    st.write("")
     st.markdown("""
     **Note**: It is common, that after you clone the files, you would proceed make a copy of the files elsewhere. This would reduce conflict between the version of that is modified by you and the owner of the repo and prevent potential issues.
     """)
