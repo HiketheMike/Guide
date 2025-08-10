@@ -23,9 +23,11 @@ selected_guide = st.sidebar.selectbox(
 # The content for each guide is removed, leaving a blank page for now.
 # You can add new content here based on the selected_guide variable.
 if selected_guide == "Anaconda Navigator":
-    
-    st.image(get_image_path("anaconda_menu.png"), width=400)
-    st.markdown("<div style='text-align: center;'>Anaconda Home Menu</div>", unsafe_allow_html=True)
+    # Use columns to center the image and its caption
+    col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
+    with col2:
+        st.image(get_image_path("anaconda_menu.png"), width=400)
+        st.markdown("<div style='text-align: center;'>Anaconda Home Menu</div>", unsafe_allow_html=True)
     st.write("") # Adds a blank line for spacing
     st.markdown("""
     Anaconda Navigator is a **graphical user interface (GUI)** that simplifies the use of Python for environment management and data science. It comes with the Python language when installed, however it also allows for ease of "Virtual Environments" management unlike the individual Python.
@@ -40,7 +42,6 @@ if selected_guide == "Anaconda Navigator":
     Visit https://www.anaconda.com/docs/tools/anaconda-navigator/getting-started.
     """)
 
-
 elif selected_guide == "Jupyter Lab":
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
     st.write("Content for Jupyter Lab will go here.")
@@ -52,8 +53,6 @@ elif selected_guide == "GitHub Desktop":
 elif selected_guide == "Visual Studio Code":
     st.markdown("<h1 style='color:orange;'>Visual Studio Code and Jupyter Notebooks</h1>", unsafe_allow_html=True)
 
-    # VSC logo (centered)
-    col1, col2, col3 = st.columns([1, 2, 1]) # Use columns to help center the image
 
     # VSC Interface and Required extensions (side-by-side)
     col_left, col_right = st.columns(2)
