@@ -121,9 +121,10 @@ elif selected_guide == "GitHub Desktop":
 
     st.markdown("""
     - **Installation:** Go to https://desktop.github.com/download/, and download the suitable version for your device. After finishing the installation, you will be prompted to create a GitHub account, you can skip this if you want and do it later.
-        """)
+    """)
     
-    st.markdown("""**Cloning (Download from online repository):**
+    st.markdown("""
+    - **Cloning (Download from online repository):**
         1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
         2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
 
