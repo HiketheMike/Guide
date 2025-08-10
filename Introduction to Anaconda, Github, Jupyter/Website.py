@@ -98,6 +98,8 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     => With Visual Studio Code, we can run Notebooks that contain codes that can be used to create graphs or simulations that the lecturer creates which helps create a more dynamic studying activities. Moreover, the use to Markdown text cells allows for explanations and formulas alongside the code outputs.
     """)
 
+    st.markdown(""" For more detailed instructions: Visit https://code.visualstudio.com/docs """)
+
 elif selected_guide == "GitHub Desktop":
     st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
     
@@ -131,6 +133,7 @@ elif selected_guide == "GitHub Desktop":
     You would then need the URL to the remote repository, such URLS can be found following this example:
     """)
 
+
     st.write("") # Adds a blank line for spacing
     # Use columns to center the video and its caption
     col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
@@ -155,4 +158,6 @@ elif selected_guide == "GitHub Desktop":
     - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide mainly focus on accessing the tools, it is recomended that the reader learn about it in other sources.
                 """)
 
-    
+    st.markdown("""=> GitHub is mainly a tool for storing files. As lectures go on, there will be new files uploaded by the lecturer and the pupil would need to be on watch to stay up-to-date.""")
+
+    st.markdown(""" For more detailed instructions: Visit https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop """)
