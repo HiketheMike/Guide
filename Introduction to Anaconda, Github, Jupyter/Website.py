@@ -55,17 +55,17 @@ elif selected_guide == "Visual Studio Code":
     # VSC logo (centered)
     col1, col2, col3 = st.columns([1, 2, 1]) # Use columns to help center the image
     with col2:
-        st.image(get_image_path("9285135f48be4100adce0b5ed63bde52.png"), width=231)
+        st.image(get_image_path("VSC_logo.png"), width=231)
         st.markdown("<div style='text-align: center;'>VSC logo</div>", unsafe_allow_html=True)
     st.write("") # Add a blank line for spacing
 
     # VSC Interface and Required extensions (side-by-side)
     col_left, col_right = st.columns(2)
     with col_left:
-        st.image(get_image_path("95c9f86a87a041028b2b2c1dd6ac3921.png"), width=479)
+        st.image(get_image_path("VSC_interface.png"), width=479)
         st.markdown("<div style='text-align: center;'>**VSC Interface**</div>", unsafe_allow_html=True)
     with col_right:
-        st.image(get_image_path("1415837fe5aa0915f3b51c224bc7bb51.png"), width=474)
+        st.image(get_image_path("VSC_extensions.png"), width=474)
         st.markdown("<div style='text-align: center;'>**Required extensions** (*left panel, 8 extensions are seen*)</div>", unsafe_allow_html=True)
     st.write("") # Add a blank line for spacing
 
