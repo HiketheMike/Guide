@@ -86,7 +86,24 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
 
 elif selected_guide == "GitHub Desktop":
     st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
-    st.write("Content for GitHub Desktop will go here.")
+    
+
+    # GitHub starting interface image (centered)
+    col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
+    with col2:
+        st.image(get_image_path("eb51fa052ca146ae9e5cd8c9cb1be6d0.png"), width=563)
+        st.markdown("<div style='text-align: center;'>GitHub starting interface</div>", unsafe_allow_html=True)
+    st.write("") # Adds a blank line for spacing
+
+    st.markdown("""
+    - **Installation:** Go to https://desktop.github.com/download/, and download the suitable version for your device. After finishing the installation, you will be prompted to create a GitHub account, you can skip this if you want and do it later.
+    - **Pulling (Download from online repository):**
+        1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
+        2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
+
+    **=>** Either way you choose, you will need the URL to the remote repository, such URLS can be found following this example:
+    """)
+    st.write("") # Adds a blank line for spacing
     # Use columns to center the video and its caption
     col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
     with col2:
