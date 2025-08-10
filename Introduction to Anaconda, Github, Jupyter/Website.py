@@ -24,8 +24,8 @@ selected_guide = st.sidebar.selectbox(
 # You can add new content here based on the selected_guide variable.
 if selected_guide == "Anaconda Navigator":
     st.markdown("<h1 style='color:orange;'>Anaconda Navigator</h1>", unsafe_allow_html=True)
-    st.image(get_image_path("ec1bdf48527a79c07691c3e713988122.png"), width=596)
-    st.image(get_image_path("fe9395078e479ab8e5e2c40df909800b.png"), width=595)
+    st.image(get_image_path("anaconda_icon.jpeg"), width=596)
+    st.image(get_image_path("anaconda_main_menu.png"), width=595)
     st.write("") # Adds a blank line for spacing
     st.markdown("""
     Anaconda Navigator is a **graphical user interface (GUI)** that simplifies the use of Python for environment management and data science. It comes with the Python language when installed, however it also allows for ease of "Virtual Environments" management unlike the individual Python.
