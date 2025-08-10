@@ -44,11 +44,38 @@ if selected_guide == "Anaconda Navigator":
 elif selected_guide == "Jupyter Lab":
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
     st.write("Content for Jupyter Lab will go here.")
-
+     
 elif selected_guide == "GitHub Desktop":
     st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
     st.write("Content for GitHub Desktop will go here.")
 
 elif selected_guide == "Visual Studio Code":
-    st.markdown("<h1 style='color:orange;'>Visual Studio Code</h1>", unsafe_allow_html=True)
-    st.write("Content for Visual Studio Code will go here.")
+    st.markdown("<h1 style='color:orange;'>Visual Studio Code and Jupyter Notebooks</h1>", unsafe_allow_html=True)
+
+    # VSC logo (centered)
+    col1, col2, col3 = st.columns([1, 2, 1]) # Use columns to help center the image
+    with col2:
+        st.image(get_image_path("9285135f48be4100adce0b5ed63bde52.png"), width=231)
+        st.markdown("<div style='text-align: center;'>VSC logo</div>", unsafe_allow_html=True)
+    st.write("") # Add a blank line for spacing
+
+    # VSC Interface and Required extensions (side-by-side)
+    col_left, col_right = st.columns(2)
+    with col_left:
+        st.image(get_image_path("95c9f86a87a041028b2b2c1dd6ac3921.png"), width=479)
+        st.markdown("<div style='text-align: center;'>**VSC Interface**</div>", unsafe_allow_html=True)
+    with col_right:
+        st.image(get_image_path("1415837fe5aa0915f3b51c224bc7bb51.png"), width=474)
+        st.markdown("<div style='text-align: center;'>**Required extensions** (*left panel, 8 extensions are seen*)</div>", unsafe_allow_html=True)
+    st.write("") # Add a blank line for spacing
+
+    st.markdown("""
+    Visual Studio Code is an Integrated Development Environment (IDE) that allows us to use many programming languages (e.g R, Python, C++,...). It comes with many extensions that allows for flexibility and versatility, one of these extensions include the "Jupyter" extension, which allows you to read and write with Jupyter Notebook files (.ipynb files).
+
+    - **Installation:** Go to https://code.visualstudio.com/download, and download the version suitable with your device operating system.
+    - **Setting up Jupyter extension:** Following the VSC interface above...
+
+    1.  Go to Activity Bar and find **Extensions**.
+    2.  In the **Extensions** tab, there is a search bar, type "Jupyter" and click on "Jupyter" in search results, you will be asked to install the extension. Repeat this step for the "Python" extension. After that, clear the search bar, and make sure that Jupyter/ Python and its extra components are installed (for reference, look at **Required extensions**).
+    """)
+
