@@ -111,7 +111,7 @@ elif selected_guide == "GitHub Desktop":
         1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
         2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
 
-    **=>** Either way you choose, you will need the URL to the remote repository, such URLS can be found following this example:
+    You would then need the URL to the remote repository, such URLS can be found following this example:
     """)
 
     st.write("") # Adds a blank line for spacing
@@ -120,11 +120,16 @@ elif selected_guide == "GitHub Desktop":
     with col2:
         st.video("https://youtu.be/U9AVfBaTKZs") # Use the YouTube URL directly
         st.markdown("<div style='text-align: center;'>A short guide on GitHub Desktop</div>", unsafe_allow_html=True)
+    
+    st.markdown("""
+    **Note**: It is common, that after you clone the files, you would proceed make a copy of the files elsewhere. This would reduce conflict between the version of that is modified by you and the owner of the repo and prevent potential issues.
+    """)
+    
     st.write("") # Adds a blank line for spacing
     st.markdown("""
     - **Fetching and Pulling (Update from online repository):** Once you have a cloned repo, it is possible that the owner of the repo updated some files, in that case we would use the Fetch button and 2 things will happen:
         1.  You pressed the **Fetch Origin** button on top and nothing happens, this means that the files are up-to-date.
-        2.  You pressed the **Fetch Origin** button and it becomes **Pull Origin**, this means that there are updates to the local files. If you get this prompt, pressed **Pull Origin**, and go to where you stored your local folder, changes will be made there.
+        2.  You pressed the **Fetch Origin** button and it becomes **Pull Origin** (like the example above), this means that there are updates to the local files. If you get this prompt, pressed **Pull Origin**, and go to where you stored your local folder, changes will be made there.
     """)
 
 
