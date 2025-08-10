@@ -91,7 +91,7 @@ elif selected_guide == "GitHub Desktop":
     # GitHub starting interface image (centered)
     col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
     with col2:
-        st.image(get_image_path("eb51fa052ca146ae9e5cd8c9cb1be6d0.png"), width=563)
+        st.image(get_image_path("GitHub_interface.png"), width=563)
         st.markdown("<div style='text-align: center;'>GitHub starting interface</div>", unsafe_allow_html=True)
     st.write("") # Adds a blank line for spacing
 
