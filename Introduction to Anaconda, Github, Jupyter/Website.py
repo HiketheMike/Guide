@@ -94,6 +94,16 @@ elif selected_guide == "GitHub Desktop":
         st.image(get_image_path("GitHub_interface.png"), width=563)
         st.markdown("<div style='text-align: center;'>GitHub starting interface</div>", unsafe_allow_html=True)
     st.write("") # Adds a blank line for spacing
+    
+    # New images aligned left and right
+    col_left_gh, col_right_gh = st.columns(2)
+    with col_left_gh:
+        st.image(get_image_path("GitHub_functions.png"), width=544)
+        st.markdown("<div style='text-align: center;'>The various functions of GitHub Desktop</div>", unsafe_allow_html=True)
+    with col_right_gh:
+        st.image(get_image_path("GitHub_pull.png"), width=545)
+        st.markdown("<div style='text-align: center;'>An example of Pulling (left panel, 8 extensions are seen)</div>", unsafe_allow_html=True)
+    st.write("") # Add a blank line for spacing
 
     st.markdown("""
     - **Installation:** Go to https://desktop.github.com/download/, and download the suitable version for your device. After finishing the installation, you will be prompted to create a GitHub account, you can skip this if you want and do it later.
@@ -101,7 +111,7 @@ elif selected_guide == "GitHub Desktop":
         1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
         2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
 
-    **=>** Either way you choose, you will need the URL to the remote repository, such URLS can be found following this example:
+    **=>** You will need the URL to the remote repository, such URLS can be found following this example:
     """)
     st.write("") # Adds a blank line for spacing
     # Use columns to center the video and its caption
@@ -114,4 +124,5 @@ elif selected_guide == "GitHub Desktop":
     Content for GitHub Desktop will go here. You can add more detailed instructions or text below the video.
     """)
 
-# ...existing code...
+
+
