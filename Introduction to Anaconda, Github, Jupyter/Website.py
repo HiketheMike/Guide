@@ -16,7 +16,7 @@ def get_image_path(image_name):
 st.sidebar.title("Navigation")
 selected_guide = st.sidebar.selectbox(
     "Select Guide",
-    ["Anaconda Navigator", "Jupyter Lab", "GitHub Desktop", "Visual Studio Code"],
+    ["Anaconda Navigator", "Visual Studio Code and Jupyter Notebook", "GitHub Desktop"],
     index=0  # Default to Anaconda Navigator
 )
 
@@ -43,9 +43,7 @@ if selected_guide == "Anaconda Navigator":
     Visit https://www.anaconda.com/docs/tools/anaconda-navigator/getting-started.
     """)
 
-    st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
-    st.write("Content for Jupyter Lab will go here.")
-    
+
 elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     st.markdown("<h1 style='color:orange;'>Visual Studio Code and Jupyter Notebooks</h1>", unsafe_allow_html=True)
 
@@ -86,3 +84,4 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
 elif selected_guide == "GitHub Desktop":
     st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
     st.write("Content for GitHub Desktop will go here.")
+    
