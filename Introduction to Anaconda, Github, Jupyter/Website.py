@@ -55,7 +55,7 @@ elif selected_guide == "Visual Studio Code":
     # VSC logo (centered)
     col1, col2, col3 = st.columns([1, 2, 1]) # Use columns to help center the image
     with col2:
-        st.image(get_image_path("VSC_logo.png"), width=231)
+        st.image(get_image_path("VSC_icon.png"), width=231)
         st.markdown("<div style='text-align: center;'>VSC logo</div>", unsafe_allow_html=True)
     st.write("") # Add a blank line for spacing
 
