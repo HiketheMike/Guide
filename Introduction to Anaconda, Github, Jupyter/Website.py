@@ -147,9 +147,11 @@ elif selected_guide == "GitHub Desktop":
     st.markdown("""
     - **Fetching and Pulling (Update from online repository):** Once you have a cloned repo, it is possible that the owner of the repo updated some files, in that case we would use the Fetch button and 2 things will happen:
         1.  You pressed the **Fetch Origin** button on top and nothing happens, this means that the files are up-to-date.
-        2.  You pressed the **Fetch Origin** button and it becomes **Pull Origin** (like the example above), this means that there are updates to the local files. If you get this prompt, pressed **Pull Origin**, and go to where you stored your local folder, changes will be made there.
+        2.  You pressed the **Fetch Origin** button and it becomes **Pull Origin** (shown on the picture above), this means that there are updates to the local files. If you get this prompt, pressed **Pull Origin**, and go to where you stored your local folder, changes will be made there.
     """)
 
 
-
+    st.markdown("""
+    - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide is mainly for student uses of lecturers' tools, it is not needed.
+                """)
 
