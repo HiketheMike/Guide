@@ -87,4 +87,14 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
 elif selected_guide == "GitHub Desktop":
     st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
     st.write("Content for GitHub Desktop will go here.")
+    # Use columns to center the video and its caption
+    col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
+    with col2:
+        st.video("https://youtu.be/U9AVfBaTKZs") # Use the YouTube URL directly
+        st.markdown("<div style='text-align: center;'>A short guide on GitHub Desktop</div>", unsafe_allow_html=True)
+    st.write("") # Adds a blank line for spacing
+    st.markdown("""
+    Content for GitHub Desktop will go here. You can add more detailed instructions or text below the video.
+    """)
 
+# ...existing code...
