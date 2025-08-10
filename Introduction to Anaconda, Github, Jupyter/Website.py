@@ -63,10 +63,10 @@ elif selected_guide == "Visual Studio Code":
     col_left, col_right = st.columns(2)
     with col_left:
         st.image(get_image_path("VSC_interface.png"), width=479)
-        st.markdown("<div style='text-align: center;'>**VSC Interface**</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: center;'>VSC Interface</div>", unsafe_allow_html=True)
     with col_right:
         st.image(get_image_path("VSC_extensions.png"), width=474)
-        st.markdown("<div style='text-align: center;'>**Required extensions** (*left panel, 8 extensions are seen*)</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: center;'> Required extensions (*left panel, 8 extensions are seen)</div>", unsafe_allow_html=True)
     st.write("") # Add a blank line for spacing
 
     st.markdown("""
