@@ -152,6 +152,7 @@ elif selected_guide == "GitHub Desktop":
 
 
     st.markdown("""
-    - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide is mainly for student uses of lecturers' tools, it is not needed.
+    - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide mainly focus on accessing the tools, it is recomended that the reader learn about it in other sources.
                 """)
 
+    
