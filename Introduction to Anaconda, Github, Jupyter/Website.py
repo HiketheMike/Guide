@@ -45,12 +45,7 @@ if selected_guide == "Anaconda Navigator":
 
     st.markdown("<h1 style='color:orange;'>Jupyter Lab guide</h1>", unsafe_allow_html=True)
     st.write("Content for Jupyter Lab will go here.")
-     
-
-    st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
-    st.write("Content for GitHub Desktop will go here.")
-
-
+    
 elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     st.markdown("<h1 style='color:orange;'>Visual Studio Code and Jupyter Notebooks</h1>", unsafe_allow_html=True)
 
@@ -89,4 +84,5 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     """)
 
 elif selected_guide == "GitHub Desktop":
-    st.markdown("<h1 style='color:orange;'>Github Desktop</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:orange;'>GitHub Desktop</h1>", unsafe_allow_html=True)
+    st.write("Content for GitHub Desktop will go here.")
