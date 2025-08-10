@@ -58,6 +58,17 @@ elif selected_guide == "Visual Studio Code":
         st.image(get_image_path("VSC_icon.jpg"), width=300)
     st.write("") # Add a blank line for spacing
 
+    # VSC Interface and Required extensions (side-by-side)
+    col_left, col_right = st.columns(2)
+    with col_left:
+        st.image(get_image_path("VSC_interface.png"), width=500)
+        st.markdown("<div style='text-align: center;'>VSC Interface</div>", unsafe_allow_html=True)
+    with col_right:
+        st.image(get_image_path("VSC_extensions.png"), width=500)
+        st.markdown("<div style='text-align: center;'> Required extensions (left panel, 8 extensions are seen)</div>", unsafe_allow_html=True)
+    st.write("") # Add a blank line for spacing
+    st.write("")
+    
     st.markdown("""
     Visual Studio Code is an Integrated Development Environment (IDE) that allows us to use many programming languages (e.g R, Python, C++,...). It comes with many extensions that allows for flexibility and versatility, one of these extensions include the "Jupyter" extension, which allows you to read and write with Jupyter Notebook files (.ipynb files).
 
@@ -79,4 +90,3 @@ elif selected_guide == "Visual Studio Code":
 
     => With Visual Studio Code, we can run Notebooks that contain codes that can be used to create graphs or simulations that the lecturer creates which helps create a more dynamic studying activities. Moreover, the use to Markdown text cells allows for explanations and formulas alongside the code outputs.
     """)
-
