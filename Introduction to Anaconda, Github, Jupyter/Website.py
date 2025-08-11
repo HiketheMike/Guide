@@ -96,7 +96,7 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     st.markdown("""
     - **Running a Jupyter Notebook:** A Jupyter notebook allows you to *write codes* and *plain texts*, to run code cell...
         1.  Click on a cell and press the "Run" button. If you want to run the entire notebook, look on top of the **Editor** there should be a "Run all" button.
-        2.  A prompt pops up *on top,* assuming you used **Anaconda Navigator** to open VSC, choose Select a Kernel --> Python Environments --> base (python x.xx.x). It will then proceed to run the codes.
+        2.  A prompt pops up *on top,* assuming you used **Anaconda Navigator** to open VSC, choose Select a Kernel --> Python Environments --> base (python x.xx.x). It will then proceed to run the codes. (If you don't open VSC with Anaconda, then you would have to use your own separate python language)
         3.  If finished and without any errors, an output would be put below the code cells. Markdown text cells would become plain text cells once run instead.
     """)
 
