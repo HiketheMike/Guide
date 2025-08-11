@@ -130,7 +130,7 @@ elif selected_guide == "GitHub Desktop":
         1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
         2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
 
-    You would then need the URL to the remote repository, such URLS can be found following this example:
+    You would then need the URL to the remote repository as well as the filepath to the folder where you want to store the files. The URL can be found as in this example:
     """)
 
 
@@ -139,11 +139,11 @@ elif selected_guide == "GitHub Desktop":
     col1, col2, col3 = st.columns([1, 2, 1]) # Adjust ratios as needed for centering
     with col2:
         st.video("https://youtu.be/U9AVfBaTKZs") # Use the YouTube URL directly
-        st.markdown("<div style='text-align: center;'>A short guide on GitHub Desktop</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: center;'>Guide on collecting URL for GitHub Repositories</div>", unsafe_allow_html=True)
 
     st.write("")
     st.markdown("""
-    **Note**: It is common, that after you clone the files, you would proceed make a copy of the files elsewhere. This would reduce conflict between the version of that is modified by you and the owner of the repo and prevent potential issues.
+    **Note**: It is common, that after you clone the files, you would proceed make a copy of the files elsewhere and add modifications in the copied files. This would reduce conflict between the version of that is modified by you and the owner of the repo and prevent potential issues.
     """)
     
     st.write("") # Adds a blank line for spacing
@@ -158,6 +158,6 @@ elif selected_guide == "GitHub Desktop":
     - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide mainly focus on accessing the tools, it is recomended that the reader learn about it in other sources.
                 """)
 
-    st.markdown("""=> GitHub is mainly a tool for storing files. As lectures go on, there will be new files uploaded by the lecturer and the pupil would need to be on watch to stay up-to-date.""")
+    st.markdown("""=> GitHub is mainly a tool for storing files. As lectures go on, there will be new files uploaded by the lecturer and the pupil would need to be on watch to stay up-to-date.'""")
 
     st.markdown(""" For more detailed instructions: Visit https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop """)
