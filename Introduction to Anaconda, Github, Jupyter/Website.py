@@ -83,8 +83,8 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
                 
     st.markdown("""
     - **Opening a Jupyter Notebook:** After that, go to the activity bar and look for **Explorer**, in here there are 2 options for you to open a Jupyter notebook file...  
-        1.  Right-click --> "Add Folder to workspace": allows you to choose the folder that contain the Jupyter notebook file and read it. However unlike opening individual files, this functions allows you to *access other dependencies* such as pictures and videos that are embeded to a local notebook. If you open a notebook and see some missing pictures, then you would need to use this function instead.
-        2.  Right-click --> New File --> Jupyter Notebook: allows you to make a new notebook and use it.
+        1.  File --> Add Folder to workspace: allows you to choose the folder that contain the Jupyter notebook file and read it. However unlike opening individual files, this functions allows you to *access other dependencies* such as pictures and videos that are embeded to a local notebook. If you open a notebook and see some missing pictures, then you would need to use this function instead.
+        2.  File --> New File --> Jupyter Notebook: allows you to make a new notebook and use it.
     """)
                 
     st.markdown("""
