@@ -158,6 +158,6 @@ elif selected_guide == "GitHub Desktop":
     - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide mainly focus on accessing the tools, it is recomended that the reader learn about it in other sources.
                 """)
 
-    st.markdown("""=> GitHub is mainly a tool for storing files. As projects or courses progress. There will be updates to the remote folder by the user, so make sure to fetch origin often to stay updated.'""")
+    st.markdown("""=> GitHub is mainly a tool for storing files. As projects or courses progress. There will be updates to the remote folder by the user, so make sure to fetch origin often to stay updated.""")
 
     st.markdown(""" For more detailed instructions: Visit https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop """)
