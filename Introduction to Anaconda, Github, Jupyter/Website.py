@@ -56,7 +56,6 @@ if selected_guide == "Anaconda Navigator":
     Visit https://www.anaconda.com/docs/tools/anaconda-navigator/getting-started.
     """)
 
-
 elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     st.markdown("<h1 style='color:orange;'>Visual Studio Code and Jupyter Notebooks</h1>", unsafe_allow_html=True)
 
