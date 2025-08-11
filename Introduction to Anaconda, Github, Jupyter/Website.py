@@ -81,7 +81,7 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     """)
                 
     st.markdown("""
-    - ** Open VSC through Anaconda:** After installing VSC, open Anaconda and you should see VSC ready to open, otherwise refresh anaconda to see if it VSC appeared.
+    - **Open VSC through Anaconda:** After installing VSC, open Anaconda and you should see VSC ready to open, otherwise refresh anaconda to see if it VSC appeared.
      """)
     
     st.markdown("""  
