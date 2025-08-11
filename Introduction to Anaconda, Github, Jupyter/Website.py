@@ -118,7 +118,7 @@ elif selected_guide == "GitHub Desktop":
         st.markdown("<div style='text-align: center;'>The various functions of GitHub Desktop</div>", unsafe_allow_html=True)
     with col_right_gh:
         st.image(get_image_path("GitHub_pull.png"), width=545)
-        st.markdown("<div style='text-align: center;'>An example of Pulling (left panel, 8 extensions are seen)</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: center;'>An example of Pulling</div>", unsafe_allow_html=True)
     st.write("") # Add a blank line for spacing
 
     st.markdown("""
@@ -130,7 +130,7 @@ elif selected_guide == "GitHub Desktop":
         1.  When first starting GitHub Desktop, you have 3 main options, to pull choose **Clone a repository from the Internet** --> **URL**.
         2.  Later, after download from 1 repository, you can download another different repository by clicking on **File** --> **Clone repository** --> **URL**.
 
-    You would then need the URL to the remote repository as well as the filepath to the folder where you want to store the files. The URL can be found as in this example:
+    You would then need the **URL** to the remote repository as well as the **filepath** to the folder where you want to store the files. The URL can be found as in this example:
     """)
 
 
@@ -158,6 +158,6 @@ elif selected_guide == "GitHub Desktop":
     - **Pushing (Update TO Online Repository)*:** Given that you have made a GitHub account and decided to open a repository, you can choose the create a local folder and Push it to a Remote Repository. Since this guide mainly focus on accessing the tools, it is recomended that the reader learn about it in other sources.
                 """)
 
-    st.markdown("""=> GitHub is mainly a tool for storing files. As lectures go on, there will be new files uploaded by the lecturer and the pupil would need to be on watch to stay up-to-date.'""")
+    st.markdown("""=> GitHub is mainly a tool for storing files. As projects or courses progress. There will be updates to the remote folder by the user, so make sure to fetch origin often to stay updated.'""")
 
     st.markdown(""" For more detailed instructions: Visit https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop """)
