@@ -63,11 +63,11 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     with col_right:
         st.image(get_image_path("VSC_extensions.png"), width=500)
         st.markdown("<div style='text-align: center;'> Required extensions (left panel, 8 extensions are seen)</div>", unsafe_allow_html=True)
-    st.write("") # Add a blank line for spacing
+    st.write("") 
     st.write("")
     
     st.markdown("""
-    Visual Studio Code is an Integrated Development Environment (IDE) that allows us to use many programming languages (e.g R, Python, C++,...). It comes with many extensions that allows for flexibility and versatility, one of these extensions include the "Jupyter" extension, which allows you to read and write with Jupyter Notebook files (.ipynb files).
+    Visual Studio Code is an Integrated Development Environment (IDE) that allows us to use many programming languages (e.g R, Python, C++,...). It comes with many extensions that allows for flexibility and versatility, one of these extensions include the "Jupyter" extension, which allows you to read and write with Jupyter Notebook files (e.g file_name.ipynb).
     """)
 
     st.markdown("""
