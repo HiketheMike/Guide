@@ -81,8 +81,11 @@ elif selected_guide == "Visual Studio Code and Jupyter Notebooks":
     """)
                 
     st.markdown("""
-    - **Setting up Jupyter and Python extension:** Following the VSC interface above...
-
+    - ** Open VSC through Anaconda:** After installing VSC, open Anaconda and you should see VSC ready to open, otherwise refresh anaconda to see if it VSC appeared.
+     """)
+    
+    st.markdown("""  
+    - **Setting up Jupyter and Python extension:** Before we can start using VSC, we would need to download extensions first...     
         1.  Go to Activity Bar and find **Extensions**.
         2.  In the **Extensions** tab, there is a search bar, type "Jupyter" and click on "Jupyter" in search results, you will be asked to install the extension. Repeat this step for the "Python" extension. After that, clear the search bar, and make sure that Jupyter/ Python and its extra components are installed (for reference, look at **Required extensions**).
     """)
